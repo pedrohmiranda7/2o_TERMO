@@ -1,0 +1,37 @@
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    text-align: center;
+}
+
+nav a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none
+}
+
+.Bemvindo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Tecnologia{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img{
+    height: 300px;
+    width: 200px;
+    position: relative;
+    top: auto;
+    left: 40px;
+}
+
+footer p{
+    background-color: paleturquoise;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
