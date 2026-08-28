@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a365d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header p {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    width: 800px;
+    margin: 20px auto;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1a365d;
+    text-align: center;
+}
+
+h3 {
+    color: #1a365d;
+}
+
+p {
+    color: black;
+    font-size: 14px;
+}
+
+article {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.servicos article {
+    background-color: #e8f4f8;
+}
+
+img {
+    width: 150px;
+}
+
+.inicio img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.equipe article {
+    text-align: center;
+}
+
+.equipe img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #1a365d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+}
+
+footer {
+    background-color: #1a365d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    color: white;
+}
