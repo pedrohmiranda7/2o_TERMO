@@ -1,0 +1,392 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fnil\fcharset0 MS Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs16 001 - Rela\f1\'e7\'e3o: \cf2\b0 Atende\cf1\b 
+\par \cf0\b0\f0 Relacionamentos entre Funcion\f1\'e1rios e Pedidos
+\par Cardinalidade: 0,n e 0,n.
+\par O funcion\'e1rio regustra varios pedidos; o pedido \'e9 registrado por um funcion\'e1rio.
+\par \f0 
+\par \cf1\b 002 - Observa\f1\'e7\'e3o: \cf2\b0 Banco de Dados
+\par Sistema Smart Coffee\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 003 - Atributo: \cf2\b0 CNPJ_Fornecedor\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(18)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 004 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(14)
+\par Fun\f1\'e7\'e3o: Not Null Unique
+\par \f0 
+\par \cf1\b 005 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(14)
+\par Fun\f1\'e7\'e3o: Not Null Unique
+\par \f0 
+\par \cf1\b 006 - Atributo: \cf2\b0 Cargo_Funcionarios\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 007 - Atributo: \cf2\b0 Cart\f1\'e3o\cf1\b 
+\par \cf0\b0\f0 Tipo de Dado: VARCHAR(50) 
+\par \cf1\b 008 - Entidade: \cf2\b0 Categoria\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre o Categoria
+\par Relacionamentos entre Categoria e Produtos
+\par Cardinalidade do relacionamento 1,n e 1,1. (Categoria e Produtos) \f0 
+\par \cf1\b 009 - Atributo: \cf2\b0 Categoria_Produtos\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 010 - Rela\f1\'e7\'e3o: \cf2\b0 Classifica\cf1\b 
+\par \cf0\b0\f0 Relacionamento entre Produtos e Categoria
+\par Cardinalidade: 1,1 e 1,n
+\par 
+\par \cf1\b 011 - Atributo: \cf2\b0 Classificacao_Categoria\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 012 - Entidade: \cf2\b0 Clientes\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre os Clientes
+\par Relacionamentos entre Clientes e Pedidos
+\par Relacionamentos entre Clientes e Programa de Fidelidade
+\par Cardinalidade do relacionamento 0,n e 0,n. (Clientes e Pedidos)
+\par Cardinalidade do relacionamento 1,1 e 1,1 (Clientes e Programa de Fidelidade)
+\par \f0 
+\par \cf1\b 013 - Atributo: \cf2\b0 Comprovante_Pagamento\cf1\b 
+\par \cf0\b0 Tipo de Dado: Int
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 014 - Rela\f1\'e7\'e3o: \cf2\b0 Comp\'f5em\cf1\b 
+\par \cf0\b0\f0 Relacionamento entre Produtos e Pedidos
+\par Cardinalidade 1,n e 0,n
+\par 
+\par \cf1\b 015 - Rela\f1\'e7\'e3o: \cf2\b0 Consome\cf1\b 
+\par \cf0\b0\f0 Relacionamento entre Produtos e Estoque
+\par Cardinalidade: 0,n e 1,n
+\par Gera a entidade associativa Ficha_T\f1\'e9cnica (com o atributo quantidade_gasta), controlando quanto insumo cada produto gasta ao ser vendido.
+\par \f0 
+\par \cf1\b 016 - Rela\f1\'e7\'e3o: \cf2\b0 Cont\'e9m\cf1\b 
+\par \cf0\b0\f0 Relacionamento entre Pedidos e Produtos
+\par Cardinalidade 1,n e 1,n
+\par Gera a entidade associativa Item_Pedido(com atributos quantidade e preco_historico). 
+\par \cf1\b 017 - Atributo: \cf2\b0 Data_Cadastro\cf1\b 
+\par \cf0\b0 Tipo de Dado: Datetime
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 018 - Atributo: \cf2\b0 Data_Criacao_Categoria\cf1\b 
+\par \cf0\b0 Tipo de Dado: Datetime
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 019 - Atributo: \cf2\b0 Data_Hora_Pagamento\cf1\b 
+\par \cf0\b0 Tipo de Dado: Datetime
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 020 - Atributo: \cf2\b0 Data_Hora_Pedido\cf1\b 
+\par \cf0\b0 Tipo de Dado: Datetime
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 021 - Atributo: \cf2\b0 Data_Nascimento_Clientes\cf1\b 
+\par \cf0\b0 Tipo de Dado: date
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 022 - Atributo: \cf2\b0 Data_Ultima_Atualizacao\cf1\b 
+\par \cf0\b0 Tipo de Dado: Datetime
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 023 - Atributo: \cf2\b0 Data_Validade_Pontos\cf1\b 
+\par \cf0\b0 Tipo de Dado: Datetime
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 024 - Entidade: \cf2\b0 Delivery\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre o Delivery
+\par Relacionamentos entre Delivery e Funcion\'e1rios
+\par Relacionamentos entre Delivery e Pedidos
+\par Cardinalidade do relacionamento 1,1 e 1,n. (Delivery e Funcion\'e1rios)
+\par Cardinalidade do relacionamento 1,n e 1,1. (Delivery e Pedidos)
+\par \f0 
+\par \cf1\b 025 - Atributo: \cf2\b0 Dinheiro\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50) 
+\par \cf1\b 026 - Atributo: \cf2\b0 Email_Clientes\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(100)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 027 - Atributo: \cf2\b0 Email_Fornecedor\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(100)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 028 - Atributo: \cf2\b0 Endereco_Entrega\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(100)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 029 - Rela\f1\'e7\'e3o: \cf2\b0 Entrega\cf1\b 
+\par \cf0\b0\f0 Relacionamento Funcion\f1\'e1rios e Delivery
+\par Cardinalidade: 0,n e 0,n
+\par Um funcion\'e1rio (entregador) pode levar v\'e1rios deliveries.
+\par \f0 
+\par \cf1\b 030 - Atributo: \cf2\b0 Escala_Funcionario\cf1\b 
+\par \cf0\b0 Tipo de Dado: Time
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 031 - Entidade: \cf2\b0 Estoque\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre o Estoque
+\par Relacionamentos entre Estoque e Produtos
+\par Relacionamentos entre Estoque e Fornecedor
+\par Cardinalidade do relacionamento 1,n e 1,n. (Estoque e Produtos)
+\par Cardinalidade do relacionamento 1,1 e 1,n. (Estoque e Fornecedor) \f0 
+\par \cf1\b 032 - Rela\f1\'e7\'e3o: \cf2\b0 Fornece\cf1\b 
+\par \cf0\b0\f0 Relacionamento entre Fornecedor e Estoque
+\par Cardinalidade 1,n e 1,1
+\par 
+\par \cf1\b 033 - Entidade: \cf2\b0 Fornecedor\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre o Fornecedor
+\par Relacionamentos entre Fornecedor e Estoque
+\par Cardinalidade do relacionamento 1,n e 1,1. (Estoque e Fornecedor)
+\par \f0 
+\par \cf1\b 034 - Atributo: \cf2\b0 Fornecedor_Produto\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 035 - Entidade: \cf2\b0 Funcion\f1\'e1rios\cf1\b 
+\par \cf0\b0\f0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre os Funcion\'e1rios
+\par Relacionamentos entre Funcion\'e1rios e Pedidos
+\par Relacionamentos entre Funcion\'e1rios e Delivery
+\par Cardinalidade do relacionamento 0,n e 0,n. (Funcion\'e1rios e Pedidos)
+\par Cardinalidade do relacionamento 0,n e 0,n. (Funcion\'e1rios e Delivery)
+\par \f0 
+\par \cf1\b 036 - Rela\f1\'e7\'e3o: \cf2\b0 Gera\cf1\b 
+\par \cf0\b0\f0 Relacionamento Pedidos e Delivery
+\par Cardinalidade: 0,1 e 0,1
+\par Nem todo pedido vai par entrega, mas todo delivery obrigatoriamente nasceu de um pedido.
+\par 
+\par \cf1\b 037 - Rela\f1\'e7\'e3o: \cf2\b0 Gera\cf1\b 
+\par \cf0\b0\f0 Relacionamento entre Pedidos e Pagamentos
+\par Cardinalidade 1,n e 1,1
+\par 
+\par \cf1\b 038 - Atributo: \cf2\b0 ID_Categoria\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria
+\par \f0 
+\par \cf1\b 039 - Atributo: \cf2\b0 ID_Clientes\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria \f0 
+\par \cf1\b 040 - Atributo: \cf2\b0 ID_Delivery\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria
+\par \f0 
+\par \cf1\b 041 - Atributo: \cf2\b0 ID_Estoque\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria
+\par \f0 
+\par \cf1\b 042 - Atributo: \cf2\b0 ID_Fidelidade\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria
+\par \f0 
+\par \cf1\b 043 - Atributo: \cf2\b0 ID_Fornecedor\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria
+\par \f0 
+\par \cf1\b 044 - Atributo: \cf2\b0 ID_Funcionarios\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria
+\par \f0 
+\par \cf1\b 045 - Atributo: \cf2\b0 ID_Pagamento\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria
+\par \f0 
+\par \cf1\b 046 - Atributo: \cf2\b0 ID_Pedidos\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria
+\par \f0 
+\par \cf1\b 047 - Atributo: \cf2\b0 ID_Produtos\cf1\b 
+\par \cf0\b0 Tipo de Dado: int com auto incremento e chave prim\f1\'e1ria \f0 
+\par \cf1\b 048 - Atributo: \cf2\b0 Nivel_Fidelidade\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50) 
+\par \cf1\b 049 - Atributo: \cf2\b0 Nome_Categoria\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 050 - Atributo: \cf2\b0 Nome_Clientes\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 051 - Atributo: \cf2\b0 Nome_Entregador\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 052 - Atributo: \cf2\b0 Nome_Fornecedor\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 053 - Atributo: \cf2\b0 Nome_Funcionarios\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 054 - Atributo: \cf2\b0 Nome_Insumo\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 055 - Atributo: \cf2\b0 Nome_Produtos\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 056 - Atributo: \cf2\b0 Observacoes_Pedido\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(100)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 057 - Entidade: \cf2\b0 Pagamento\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre o Pagamento
+\par Relacionamentos entre Pagamento e Pedidos
+\par Relacionamentos entre Pagamento e Programa de Fidelidade
+\par Cardinalidade do relacionamento 1,n e 1,1. (Pagamento e Produtos)
+\par Cardinalidade do relacionamento 1,1 e 1,1. (Pagamento e Programa de Fidelidade)
+\par \f0 
+\par \cf1\b 058 - Rela\f1\'e7\'e3o: \cf2\b0 Participa\cf1\b 
+\par \cf0\b0\f0 Relacionamento Clientes e Programa de Fidelidade
+\par Cardinalidade: 1,1 e 1,1
+\par Rela\f1\'e7\'e3o 1 para 1. Cada cliente tem uma \'fanica conta de pontos.
+\par \f0 
+\par \cf1\b 059 - Entidade: \cf2\b0 Pedidos\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre os Pedidos
+\par Relacionamentos entre Pedidos e Clientes
+\par Relacionamentos entre Pedidos e Produtos
+\par Relacionamentos entre Pedidos e Categoria
+\par Cardinalidade do relacionamento 0,n e 0,n. (Pedidos e Clientes)
+\par Cardinalidade do relacionamento 1,n e 1,n. (Pedidos e Produtos)
+\par Cardinalidade do relacionamento 1,n e 1,1. (Pedidos e Categoria)
+\par \f0 
+\par \cf1\b 060 - Atributo: \cf2\b0 Pix\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50) 
+\par \cf1\b 061 - Atributo: \cf2\b0 Pontos_Acumulados\cf1\b 
+\par \cf0\b0 Tipo de Dado: Int
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 062 - Rela\f1\'e7\'e3o: \cf2\b0 Possui\cf1\b 
+\par \cf0\b0\f0 Relacionamento entre Pedidos e Pagamento
+\par Cardinalidade: 1,1 e 1,1
+\par Todo pedido fechado gera exatamente um registro de pagamento.
+\par 
+\par \cf1\b 063 - Atributo: \cf2\b0 Previsao_Entrega\cf1\b 
+\par \cf0\b0 Tipo de Dado: Datetime
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 064 - Entidade: \cf2\b0 Produtos\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre os Produtos
+\par Relacionamentos entre Produtos e Estoque
+\par Relacionamentos entre Produtos e Pedidos
+\par Cardinalidade do relacionamento 0,n e 1,n. (Produtos e Estoque)
+\par Cardinalidade do relacionamento 1,n e 0,1. (Produtos e Pedidos)
+\par \f0 
+\par \cf1\b 065 - Entidade: \cf2\b0 Programa_Fidelidade\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por organizar as informa\'e7\'f5es sobre o Programa de Fidelidade
+\par Relacionamentos entre Programa de Fidelidade e Pagamento
+\par Relacionamentos entre Porgrama de Fidelidade e Clientes
+\par Cardinalidade do relacionamento 1,1 e 1,n. (Programa de Fidelidade e Clientes)
+\par Cardinalidade do relacionamento 1,1 e 1,1. (Programa de Fidelidade e Pagamento)
+\par \f0 
+\par \cf1\b 066 - Atributo: \cf2\b0 Quantidade_Produtos\cf1\b 
+\par \cf0\b0 Tipo de Dado: Int
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 067 - Rela\f1\'e7\'e3o: \cf2\b0 Realiza\cf1\b 
+\par \cf0\b0\f0 Relacionamento entre Clientes e Pedidos
+\par Cardinalidade 0,n e 0,n
+\par Um cliente pode fazer muitos pedidos; um pedido pedido pertence a um \f1\'fanico cliente.
+\par \f0 
+\par \cf1\b 068 - Atributo: \cf2\b0 Setor_Preparo\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 069 - Atributo: \cf2\b0 Status_Entrega\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 070 - Atributo: \cf2\b0 Status_Pagamento\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 071 - Atributo: \cf2\b0 Status_Pedido\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 072 - Atributo: \cf2\b0 Tamanho_Produto\cf1\b 
+\par \cf0\b0 Tipo de Dado: Float
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 073 - Atributo: \cf2\b0 Taxa_Entrega\cf1\b 
+\par \cf0\b0 Tipo de Dado: Decimal(10,2)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 074 - Atributo: \cf2\b0 Telefone_Clientes\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(15)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 075 - Atributo: \cf2\b0 Telefone_Fornecedor\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 076 - Atributo: \cf2\b0 Telefone_Funcionarios\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(15)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 077 - Atributo: \cf2\b0 Tipo_Servico\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 078 - Atributo: \cf2\b0 Validade_Produto\cf1\b 
+\par \cf0\b0 Tipo de Dado: Date
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 079 - Atributo: \cf2\b0 Valor_Total_Pedidos\cf1\b 
+\par \cf0\b0 Tipo de Dado: Decimal(10,2)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 080 - Atributo: \cf2\b0 Valor_pago\cf1\b 
+\par \cf0\b0 Tipo de Dado: Decimal(10,2)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 081 - Atributo: \cf2\b0 data_admiss\f1\'e3o\cf1\b 
+\par \cf0\b0\f0 Tipo de Dado: Date
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 082 - Atributo: \cf2\b0 data_cadastro\cf1\b 
+\par \cf0\b0 Tipo de Dado: date
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 083 - Atributo: \cf2\b0 data_hora_saida\cf1\b 
+\par \cf0\b0 Tipo de Dado: Datetime
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 084 - Atributo: \cf2\b0 delivery\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50) 
+\par \cf1\b 085 - Atributo: \cf2\b0 descricao\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(100)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 086 - Atributo: \cf2\b0 forma_pagamento\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Default = "Cart\f1\'e3o"
+\par Fun\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 087 - Atributo: \cf2\b0 kg\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50) 
+\par \cf1\b 088 - Atributo: \cf2\b0 ml\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50) 
+\par \cf1\b 089 - Atributo: \cf2\b0 preco_unitario\cf1\b 
+\par \cf0\b0 Tipo de Dado: decimal (10,2)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 090 - Atributo: \cf2\b0 presencial\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50) 
+\par \cf1\b 091 - Atributo: \cf2\b0 quantidade_minima\cf1\b 
+\par \cf0\b0 Tipo de Dado: Int
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 092 - Atributo: \cf2\b0 salario\cf1\b 
+\par \cf0\b0 Tipo de Dado: Decimal(10,2)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 093 - Atributo: \cf2\b0 saldo_pontos\cf1\b 
+\par \cf0\b0 Tipo de Dado: Int
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 094 - Atributo: \cf2\b0 tipo_pedido\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par \cf1\b 095 - Atributo: \cf2\b0 un\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50) 
+\par \cf1\b 096 - Atributo: \cf2\b0 unidade_medida\cf1\b 
+\par \cf0\b0 Tipo de Dado: VARCHAR(50)
+\par Fun\f1\'e7\'e3o: Not Null
+\par \f0 
+\par 
+\par }
+ 
