@@ -134,3 +134,94 @@ INSERT INTO PAGAMENTO (ID_PEDIDO, ID_FORMA_PAGAMENTO, VALOR, DATA_PAGAMENTO) VAL
 (25, 9, 60.00, NOW());
 
 SELECT * FROM PAGAMENTO;
+--------------------------------------------------------------------------------------------
+-- EXEMPLO NOVO DE INSERÇÃO DE DADOS
+INSERT INTO PEDIDO(DATA_PEDIDO, STATUS_PEDIDO, VALOR_TOTAL, ID_CLIENTE) VALUES (NOW(), 'ABERTO', '0.00', 1);
+SET @PEDIDO = LAST_INSERT_ID();
+SELECT @PEDIDO;
+--------------------------------------------------------------------------------------------
+
+-- ATUALIZAÇÕES E NOTIFICAÇÕES DE DADOS
+
+-- EX 1:
+SELECT * FROM CLIENTE
+
+UPDATE CLIENTE 
+SET TELEFONE = '19999999014'
+WHERE ID_CLIENTE = 91;
+
+--------------------------------------------------------------------------------------------
+
+-- EX 2:
+UPDATE PRODUTO  
+SET PRECO = 1.00
+
+-- NUNCA REALIZAR UM UPDATE SEM --- WHERE 😡
+
+--------------------------------------------------------------------------------------------
+
+-- EX 3:
+SELECT * FROM CLIENTE
+
+UPDATE CLIENTE
+SET TELEFONE = '19999999014',
+    CIDADE = 'VALINHOS'
+WHERE ID_CLIENTE = 91;
+
+--------------------------------------------------------------------------------------------
+
+-- EX 4: AJUSTES DE VALORES
+SELECT * FROM PRODUTO
+
+UPDATE PRODUTO
+SET PRECO = PRECO * 1.05
+WHERE ID_CATEGORIA = 1;
+
+--------------------------------------------------------------------------------------------
+
+-- EX 5: AJUSTES DE ATUALIZAÇÕES CONDICIONAIS
+SELECT * FROM PRODUTO
+
+UPDATE PRODUTO 
+SET PRECO = CASE 
+    WHEN PRECO <= 20 THEN PRECO * 1.20  
+    ELSE PRECO * 1.05
+END
+WHERE ATIVO = TRUE;
+
+--------------------------------------------------------------------------------------------
+
+-- APAGAR DADOS DO BD
+
+-- EX 1: APAGAR UM CLIENTE ESPECÍFICO
+SELECT * FROM CLIENTE
+
+DELETE FROM CLIENTE 
+WHERE ID_CLIENTE = 91;
+
+--------------------------------------------------------------------------------------------
+
+-- EX 2: APAGAR TODOS OS CLIENTES INATIVOS
+SELECT * FROM CLIENTE
+
+DELETE FROM CLIENTE 
+WHERE ATIVO = FALSE;
+
+--------------------------------------------------------------------------------------------
+
+-- EX 3: APAGAR TODOS OS CLIENTES DE UMA CIDADE ESPECIFÍCA
+SELECT * FROM CLIENTE
+
+DELETE FROM CLIENTE 
+WHERE CIDADE = 'CHICAGO';
+
+--------------------------------------------------------------------------------------------
+
+-- EX 4: EXCLUSÃO LÓGICA
+SELECT * FROM CLIENTE
+
+UPDATE CLIENTE
+SET ATIVO = FALSE
+WHERE ID_CLIENTE = 90;
+
+--------------------------------------------------------------------------------------------
