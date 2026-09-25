@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+header {
+    background-color: #2B1B17;
+    padding: 20px;
+}
+
+header h1 {
+    color: #E2B78C;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    position: absolute;
+    color: #E2B78C;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    text-align: right;
+}
+
+section {
+    border: 30px;
+    border-width: 30px;
+    border-color: black;
+    padding: 20px;
+}
+
+
+#Inicio {
+    background-color: #FAEDCD;
+    border: 2px solid black;
+}
