@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: #2B1B17;
-    padding: 20px;
+    padding: 10px;
 }
 
 header h1 {
@@ -16,12 +16,13 @@ header h1 {
 }
 
 nav a {
-    position: absolute;
     color: #E2B78C;
     font-weight: bold;
     text-decoration: none;
     padding: 5px;
-    text-align: right;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 200px;
 }
 
 section {
@@ -34,5 +35,51 @@ section {
 
 #Inicio {
     background-color: #FAEDCD;
-    border: 2px solid black;
+    border: 1px solid black;
+}
+
+#Inicio button {
+    background-color: #C67C4E ;
+    color: white;
+    font-weight: bold
+}
+
+#Sobre {
+    border: 1px solid black;
+}
+
+.ultimo_botao {
+  background: #C67C4E;
+  color: white;
+  font-weight: bold;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.ultimo_botao:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+.ultimo_botao:active {
+  transform: translateY(-2px) scale(0.97);
+}
+
+.adicionar_botao {
+    background: #C67C4E;
+  color: white;
+  font-weight: bold;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.adicionar_botao:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+.adicionar_botao:active {
+  transform: translateY(-2px) scale(0.97);
 }
