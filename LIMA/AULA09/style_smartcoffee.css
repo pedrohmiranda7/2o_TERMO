@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: white;
     margin: 10px;
     padding: 10px;
@@ -82,4 +82,361 @@ section {
 }
 .adicionar_botao:active {
   transform: translateY(-2px) scale(0.97);
+} */
+
+
+
+
+/* =================================================================
+   CONFIGURAÇÕES GLOBAIS BÁSICAS
+   ================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #ffffff;
+    color: #3b2f2f;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =================================================================
+   CABEÇALHO (HEADER)
+   ================================================================= */
+header {
+    background-color: #2b1d14; /* Marrom escuro */
+    color: white;
+    padding: 20px 40px;
+    overflow: hidden; /* Limpa os floats para alinhar os elementos dentro */
+}
+
+/* Título SmartCoffee à esquerda */
+header h1 {
+    font-size: 20px;
+    float: left;
+}
+
+/* Menu de navegação à direita */
+header nav {
+    float: right;
+    margin-top: 2px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none; /* Remove o sublinhado */
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    color: #c88a44;
+}
+
+
+/* =================================================================
+   ESTILO GERAL DAS SEÇÕES
+   ================================================================= */
+main section {
+    padding: 40px;
+    overflow: hidden; /* Garante que os elementos internos não transbordem */
+    border-bottom: 1px solid #d1bda8;
+}
+
+
+/* =================================================================
+   1. SEÇÃO INÍCIO
+   ================================================================= */
+#Inicio {
+    background-color: #f7edd0; /* Cor creme da imagem de modelo */
+}
+
+/* Título e subtítulo da seção Início */
+#Inicio h1 {
+    font-size: 32px;
+    color: #2b1d14;
+    margin-bottom: 10px;
+    width: 55%;
+    float: left;
+}
+
+#Inicio h3 {
+    font-size: 16px;
+    color: #3b2f2f;
+    margin-bottom: 20px;
+    width: 55%;
+    float: left;
+    font-weight: normal;
+}
+
+/* Botão "Ver cardápio" */
+#Inicio button {
+    background-color: #c88a44; /* Cor caramelo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    clear: left; /* Joga o botão abaixo dos textos com segurança */
+}
+
+#Inicio button p {
+    color: white;
+    margin: 0;
+}
+
+/* Imagem da seção Início posicionada à direita */
+#Inicio img {
+    width: 38%;
+    height: 160px;
+    background-color: #614e43; /* Simula o bloco escuro da imagem de modelo */
+    float: right;
+    border: 0;
+}
+
+
+/* =================================================================
+   2. SEÇÃO SOBRE
+   ================================================================= */
+#Sobre {
+    background-color: #ffffff;
+}
+
+#Sobre h2 {
+    font-size: 26px;
+    color: #2b1d14;
+    margin-bottom: 15px;
+    width: 55%;
+    float: left;
+}
+
+/* Botão "Saiba mais" */
+#Sobre button {
+    background-color: #c88a44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    clear: left;
+    margin-bottom: 15px;
+}
+
+/* Parágrafo descritivo */
+#Sobre p {
+    font-size: 14px;
+    color: #665c5c;
+    width: 55%;
+    float: left;
+    clear: left;
+    line-height: 1.5;
+}
+
+/* Imagem da seção Sobre à direita */
+#Sobre img {
+    width: 38%;
+    height: 150px;
+    background-color: #d9d9d9; /* Cor cinza clara do modelo */
+    float: right;
+}
+
+
+/* =================================================================
+   3. SEÇÃO PRODUTOS (CAFÉS)
+   ================================================================= */
+#Produtos {
+    background-color: #f7edd0; /* Fundo creme */
+}
+
+#Produtos h2 {
+    font-size: 24px;
+    color: #2b1d14;
+    margin-bottom: 25px;
+    width: 100%;
+    float: left;
+}
+
+/* Estiliza cada article (cada produto lado a lado) */
+#Produtos article {
+    width: 31%;
+    float: left;
+    margin-right: 3.5%;
+    background-color: transparent;
+    text-align: left;
+}
+
+/* Remove a margem do último card para ele não quebrar a linha */
+#Produtos article:last-of-type {
+    margin-right: 0;
+}
+
+/* Imagens dos produtos */
+#Produtos article img {
+    width: 100%;
+    height: 110px;
+    background-color: #614e43; /* Bloco marrom dos produtos */
+    margin-bottom: 10px;
+}
+
+#Produtos article h3 {
+    font-size: 18px;
+    color: #2b1d14;
+    margin-bottom: 5px;
+}
+
+#Produtos article h4 {
+    font-size: 16px;
+    color: #c88a44;
+    margin-bottom: 8px;
+}
+
+#Produtos article p {
+    font-size: 12px;
+    color: #665c5c;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Botão "Adicionar" dos produtos */
+.botao_adicionar {
+    background-color: #c88a44;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =================================================================
+   4. SEÇÃO AMBIENTE
+   ================================================================= */
+#Ambiente {
+    background-color: #ffffff;
+}
+
+#Ambiente h2 {
+    font-size: 24px;
+    color: #2b1d14;
+    margin-bottom: 15px;
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+
+/* Imagem da seção ambiente posicionada à esquerda */
+#Ambiente img {
+    width: 40%;
+    height: 150px;
+    background-color: #d9d9d9;
+    float: left;
+}
+
+#Ambiente p {
+    font-size: 14px;
+    color: #665c5c;
+    width: 50%;
+    float: right;
+    clear: right;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Botão "Conheça" */
+.ambiente_botao {
+    background-color: #c88a44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    clear: right;
+}
+
+
+/* =================================================================
+   5. SEÇÃO CONTATO
+   ================================================================= */
+#Contato {
+    background-color: #e8e2d5; /* Tom de bege escuro da imagem de modelo */
+}
+
+#Contato h2 {
+    font-size: 24px;
+    color: #2b1d14;
+    margin-bottom: 15px;
+    width: 45%;
+    float: left;
+}
+
+#Contato p {
+    font-size: 13px;
+    color: #665c5c;
+    width: 45%;
+    float: left;
+    clear: left;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Inputs do formulário alinhados à direita */
+#Contato input {
+    display: block;
+    width: 45%;
+    float: right;
+    clear: both;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #d1bda8;
+    background-color: white;
+    font-size: 13px;
+}
+
+/* Botão "Enviar" */
+.ultimo_botao {
+    background-color: #c88a44;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 45%;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =================================================================
+   6. RODAPÉ (FOOTER)
+   ================================================================= */
+footer {
+    background-color: #2b1d14; /* Marrom escuro */
+    color: white;
+    padding: 25px 40px;
+    overflow: hidden;
+}
+
+footer h1 {
+    font-size: 18px;
+    float: left;
+}
+
+/* Navegação e ícones do rodapé alinhados à direita */
+footer nav {
+    float: right;
+}
+
+footer nav img {
+    width: 22px;
+    height: 22px;
+    background-color: #e5cb9e; /* Simula os círculos de ícones do rodapé */
+    border-radius: 50%;
+    margin-left: 10px;
+    display: inline-block;
+};
