@@ -90,16 +90,13 @@ section {
 /* =================================================================
    CONFIGURAÇÕES GLOBAIS BÁSICAS
    ================================================================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
-    background-color: #ffffff;
-    color: #3b2f2f;
-    font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 
@@ -107,8 +104,8 @@ body {
    CABEÇALHO (HEADER)
    ================================================================= */
 header {
-    background-color: #2b1d14; /* Marrom escuro */
-    color: white;
+    background-color: #2B1B17; /* Marrom escuro */
+    color: #E2B78C;
     padding: 20px 40px;
     overflow: hidden; /* Limpa os floats para alinhar os elementos dentro */
 }
@@ -126,14 +123,14 @@ header nav {
 }
 
 header nav a {
-    color: white;
+    color: #E2B78C;
     text-decoration: none; /* Remove o sublinhado */
     margin-left: 20px;
     font-size: 14px;
 }
 
 header nav a:hover {
-    color: #c88a44;
+    color: white;
 }
 
 
@@ -198,6 +195,35 @@ main section {
     border: 0;
 }
 
+/* Botão "Ver cardápio" */
+.botao_inicio {
+    background-color: #c88a44;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 45%;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao_inicio {
+  background: #C67C4E;
+  color: white;
+  font-weight: bold;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.botao_inicio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+.botao_inicio:active {
+  transform: translateY(-2px) scale(0.97);
+}
 
 /* =================================================================
    2. SEÇÃO SOBRE
@@ -245,6 +271,35 @@ main section {
     float: right;
 }
 
+/* Botão "Saiba mais" */
+.botao_sobre {
+    background-color: #c88a44;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 45%;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao_sobre {
+  background: #C67C4E;
+  color: white;
+  font-weight: bold;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.botao_sobre:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+.botao_sobre:active {
+  transform: translateY(-2px) scale(0.97);
+}
 
 /* =================================================================
    3. SEÇÃO PRODUTOS (CAFÉS)
@@ -308,11 +363,29 @@ main section {
     color: white;
     border: none;
     padding: 8px;
-    width: 100%;
+    width: 45%;
+    float: right;
     font-weight: bold;
     cursor: pointer;
 }
 
+.botao_adicionar {
+  background: #C67C4E;
+  color: white;
+  font-weight: bold;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.botao_adicionar:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+.botao_adicionar:active {
+  transform: translateY(-2px) scale(0.97);
+}
 
 /* =================================================================
    4. SEÇÃO AMBIENTE
@@ -352,13 +425,32 @@ main section {
 .ambiente_botao {
     background-color: #c88a44;
     color: white;
-    border: none;
-    padding: 10px 20px;
+    border: ;
+    padding: 8px;
+    width: 45%;
+    float: right;none
     font-weight: bold;
     cursor: pointer;
-    float: right;
-    clear: right;
 }
+
+.ambiente_botao {
+  background: #C67C4E;
+  color: white;
+  font-weight: bold;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.ambiente_botao:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+.ambiente_botao:active {
+  transform: translateY(-2px) scale(0.97);
+}
+
 
 
 /* =================================================================
@@ -366,6 +458,8 @@ main section {
    ================================================================= */
 #Contato {
     background-color: #e8e2d5; /* Tom de bege escuro da imagem de modelo */
+    padding: 40px;
+    overflow: hidden;
 }
 
 #Contato h2 {
@@ -399,7 +493,7 @@ main section {
     font-size: 13px;
 }
 
-/* Botão "Enviar" */
+/* Botão "Enviar" ajustado com type="submit" alinhado perfeitamente à direita */
 .ultimo_botao {
     background-color: #c88a44;
     color: white;
@@ -407,17 +501,35 @@ main section {
     padding: 8px;
     width: 45%;
     float: right;
+    clear: both;
     font-weight: bold;
     cursor: pointer;
 }
 
+.ultimo_botao {
+  background: #C67C4E;
+  color: white;
+  font-weight: bold;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.ultimo_botao:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+.ultimo_botao:active {
+  transform: translateY(-2px) scale(0.97);
+}
 
 /* =================================================================
    6. RODAPÉ (FOOTER)
    ================================================================= */
 footer {
-    background-color: #2b1d14; /* Marrom escuro */
-    color: white;
+    background-color: #2B1B17; /* Marrom escuro */
+    color: #E2B78C;
     padding: 25px 40px;
     overflow: hidden;
 }
