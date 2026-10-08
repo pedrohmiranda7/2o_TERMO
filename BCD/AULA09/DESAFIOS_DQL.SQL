@@ -11,7 +11,7 @@ USE SMARTCOFFEE_DML_PEDRO;
 
 -- 1. Liste todos os clientes cadastrados.
 SELECT * 
-FROM CLIENTE
+FROM CLIENTE;   
 
 -- 2. Exiba apenas nome, cidade e e-mail dos clientes.
 SELECT NOME, CIDADE, EMAIL
@@ -47,11 +47,14 @@ WHERE CIDADE = 'LIMEIRA' OR CIDADE = 'AMERICANA';
 -- 8. Localize os produtos cujo nome contém a palavra “Café”.
 SELECT NOME
 FROM PRODUTO
-WHERE NOME LIKE 'CAFÉ%';
+WHERE NOME LIKE '%CAFÉ%';
 
 -- 9. Liste os clientes que não informaram telefone.
 SELECT NOME, TELEFONE
 FROM CLIENTE
+WHERE TELEFONE IS NULL
+
+SELECT NOME, COALESCE (TELEFONE, 'NÃO INFORMADO') FROM CLIENTE AS TELEFONE
 WHERE TELEFONE IS NULL
 
 -- 10. Mostre os pedidos FINALIZADOS com valor acima de R$ 20,00,
@@ -68,7 +71,7 @@ SELECT COUNT (*) AS PRODUTOS_CADASTRADOS
 FROM PRODUTO;
 
 -- 12. Mostre menor preço, maior preço e preço médio dos produtos.
-SELECT MIN (PRECO) AS MENOR_PRECO, MAX (PRECO) AS MAIOR_PRECO, AVG (PRECO) AS MEDIA_PRECO
+SELECT MIN (PRECO) AS MENOR_PRECO, MAX (PRECO) AS MAIOR_PRECO, (AVG (PRECO), 2) AS MEDIA_PRECO
 FROM PRODUTO;
 
 -- 13. Informe quantos clientes existem em cada cidade.
