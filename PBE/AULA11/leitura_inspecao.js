@@ -64,4 +64,3 @@ try {
 } catch (erro) {
     console.log(`Falha ao consultar a inspeção: ${erro.message}`);
 }
-
