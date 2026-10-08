@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "chave de boca",
+    "quantidade": 3,
+    "custoUnitario": 3
+  },
+  {
+    "nome": "parafusadeira",
+    "quantidade": 3,
+    "custoUnitario": 3
+  },
+  {
+    "nome": "alicate",
+    "quantidade": 9,
+    "custoUnitario": 9
+  }
+]
