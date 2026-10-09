@@ -1,0 +1,96 @@
+/* Exercício 1: */
+
+.grid_Pedro1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    list-style: none;                  
+    padding: 0;                        
+}
+
+/* <---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
+/* Exercício 2:  */
+
+.grid_Pedro1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* <---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
+
+/* Exercício 3:  */
+
+.grid_Pedro1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* <--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ */
+
+/* Exercício 4:  */
+.grid_Pedro1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* <---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
+
+/* Exercício 5:  */
+
+/* Celular */
+@media (max-width: 300px) {
+    .grid_Pedro1 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 23px;
+    }
+}
+
+/* Tablet: */
+@media (max-width: 600px) {
+    .grid_Pedro1 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 23px;
+    }
+}
+
+/* Desktop: */
+@media (max-width: 1024px) {
+    .grid_Pedro1 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 23px;
+    }
+}
+
+/*  <---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
+
+/* Exercício 6:  */
+
+/* Desktop */
+@media (max-width: 900px) {
+    .grid-gal-img {
+        grid-template-columns: repeat(
+            auto-fit, minimax(220px, 1fr
+        ));
+        gap: 24px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 600px) {
+    .grid-gal-img {
+        grid-template-columns: repeat(
+            auto-fit, minimax(220px, 1fr
+        ));
+        gap: 24px;
+    }
+}
+
+/* Celular */
+@media (max-width: 300px) {
+        .grid-gal-img {
+        grid-template-columns: repeat(
+            auto-fit, minimax(220px, 1fr
+        ));
+        gap: 24px;
+    }
+}

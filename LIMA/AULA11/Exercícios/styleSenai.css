@@ -1,0 +1,80 @@
+/* Exercício 1:  */
+
+.grid_Senai1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    list-style: none;                  
+    padding: 0;           
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Exercício 2:  */
+
+.grid_Senai1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    list-style: none;                  
+    padding: 0; 
+    gap: 24px;          
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Exercício 3:  */
+
+/* Tablet: */
+@media (max-width: 768px) {
+    .grid_Pedro1 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Exercício 4:  */
+
+/* Celular */
+@media (max-width: 320px) {
+    .grid_Pedro1 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Exercício 5:  */
+
+/* Tablet */
+@media (max-width: 768px) {
+        .grid-gal-img {
+        grid-template-columns: repeat(
+            auto-fit, minimax(220px, 1fr
+        ));
+        gap: 24px;
+    }
+}
+
+/* Celular */
+@media (max-width: 320px) {
+        .grid-gal-img {
+        grid-template-columns: repeat(
+            auto-fit, minimax(220px, 1fr
+        ));
+        gap: 24px;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Exercício 6:  */
+
+/* O "max-width" é mais fácil porque ele pode ser menor que o valor máximo, ele só não pode ultrapassar o valor; Diferente do "min-width", que ele precisa cumprir aquele valor mínimo definido, se não o código não dá certo. Ele tem uma restrição "maior". */
+
+/* ------------------------------------------------------------------- */
+
+/* Exercício 7:  */
+
+/* Eu escolheria o "max-width" por ser mais fácil e menos restritivo. */
