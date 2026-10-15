@@ -421,18 +421,6 @@ main section {
     line-height: 1.5;
 }
 
-/* Botão "Conheça" */
-.ambiente_botao {
-    background-color: #c88a44;
-    color: white;
-    border: ;
-    padding: 8px;
-    width: 45%;
-    float: right;none
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .ambiente_botao {
   background: #C67C4E;
   color: white;
