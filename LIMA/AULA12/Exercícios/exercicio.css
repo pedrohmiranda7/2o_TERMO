@@ -1,0 +1,85 @@
+/* -------------------------------------------
+                EXERCÍCIO 1
+------------------------------------------- */
+
+:root {
+    /* Paleta de Cores */
+    --espresso: #2B170D;
+    --cafe: #F4EAE1;
+    --caramelo: #C67C4E;
+    --creme: #FAEDCD;
+    --texto: #000000;
+    --branco: #FFFFFF;
+
+    /* Fontes */
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: "Open Sans"
+}
+
+/* -------------------------------------------
+                EXERCÍCIO 2
+------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: var(--caramelo);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+/* -------------------------------------------
+                EXERCÍCIO 3
+------------------------------------------- */
+
+.botao_3 {
+    background-color: var(--caramelo); 
+    color: var(--branco);            
+    padding: 12px 24px;        
+    border: none;
+    border-radius: 6px;      
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.botao_3:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 16px 22px rgba(0, 0, 0, 0.35);
+}
+
+/* -------------------------------------------
+                EXERCÍCIO 4
+------------------------------------------- */
+
+
+.exercicio_4 article {
+    background-color: var(--branco);         
+    border: 2px solid var(--espresso);          
+    border-radius: 8px;                 
+    padding: 20px;                     
+    width: 300px;                       
+    transition: 0.5s;   
+    text-align: center;                
+}
+
+.exercicio_4 article:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-3px); 
+}

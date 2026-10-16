@@ -6,8 +6,19 @@
     --texto: #1E140F; 
     --branco: #FFFFFF;
 
+    /* Espaçamento */
+    --espaço-xs: 4px;
+    --espaço-sm: 8px;
+    --espaço-md: 16px;
+    --espaço-lg: 32px;
+    --espaço-xl: 64px;
+    --espaço-xxl: 128px;
+
+    /* Fontes */
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: "Open Sans"
     /* :root representa o elemento raíz do documento */
-    /* Tudo que eu tenho dentro no documento eu posso por dentro do root, como fonte, cores, etc. Isso ajuda a ficar maid fácil depois. */
+    /* Tudo que eu tenho dentro no documento eu posso por dentro do root, como fonte, cores, espaçamentos, etc. Isso ajuda a ficar maid fácil depois. */
 }
 
 h1 {
