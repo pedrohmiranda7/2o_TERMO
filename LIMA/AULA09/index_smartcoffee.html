@@ -4,89 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_smartcoffee.css">
-    <title>SmartCoffee Pedro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>SmartCoffee do Pedro</title>
 </head>
 <body>
-
+    
     <header>
-        <h1>SmartCoffee</h1>
+        <h2>SmartCoffee</h2>
         <nav>
-            <a href="Inicio">Início</a>
-            <a href="Sobre">Sobre</a>
-            <a href="Produtos">Produtos</a>
-            <a href="Ambiente">Ambiente</a>
-            <a href="Contato">Contato</a>
+            <ul class="lista_pesquisa">
+                <li><a href="Inicio">Inicio</a></li>
+                <li><a href="Sobre">Sobre</a></li>
+                <li><a href="Produtos">Produtos</a></li>
+                <li><a href="Ambiente">Ambiente</a></li>
+                <li><a href="Contato">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="Inicio">
-            <h1>Café que conecta pessoas</h1>
-            <h3>Mais que café, uma experiência.</h3>
-            <button type="button" class="botao_inicio"><p>Ver cardápio</p></button>
-            <img src="#" alt="SmartCoffee">
-        </section>
-
-        <section id="Sobre">
-            <h2>Sobre nós</h2>
-            <button type="button" class="botao_sobre">Saiba mais</button>
-            <p>A SmartCoffee é uma cafeteria que conecta a cultura do café especial à tecnologia. Ela combina produtos de alta qualidade com um atendimento ágil e digital, criando uma experiência moderna e prática para quem busca energia e alta performance no dia a dia.</p>
-            <img src="#" alt="Empresa SmartCoffee">
-        </section>
-
-        <section id="Produtos">
-            <h2>Nossos Cafés</h2>
-            <article class="café">
-                <img src="#" alt="Café">
-                 <h3>Café Expresso</h3>
-                <h4>R$7,90</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam sequi aut nisi reprehenderit natus quia odio! Vero nihil sunt quia natus autem commodi alias fugiat eveniet. Doloremque, dolor tempora.</p>
-                <button class="botao_adicionar"  type="button">Adicionar</button>
-            </article>
-
-            <article class="Cappuccino">
-                <img src="#" alt="Cappuccino">
-                 <h3>Cappuccino</h3>
-                <h4>R$12,50</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores earum non aut temporibus autem unde repellendus impedit expedita veritatis eligendi, tenetur maiores accusantium placeat voluptate hic, corrupti consequatur. Nulla, tenetur.</p>
-                <button class="botao_adicionar" type="button">Adicionar</button>
-            </article>
-
-            <article class="Milk Shake">
-                <img src="#" alt="Milk Shake">
-                 <h3>Milk Shake</h3>
-                <h4>R$10,00</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi esse nihil reiciendis earum ducimus delectus, molestiae dolore! Vero aut culpa repudiandae voluptatem maiores earum facilis perspiciatis dolores velit dolor!</p>
-                <button class="botao_adicionar"  type="button">Adicionar</button>
-            </article>
-        </section>
-
-        <section id="Ambiente">
-            <h2>Nosso ambiente</h2>
-            <img src="#" alt="Ambiente da SmartCoffee">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga odit, facilis cupiditate, nobis magnam perspiciatis sit molestiae nam rem id minima quibusdam aliquid esse quasi magni! Nisi, quasi. Esse.</p>
-            <button class="ambiente_botao"  type="button">Conheça</button>
+        <section id="Inicio" class="pagina_inicial">
+            <h1><span>Café</span> que conecta <span>pessoas</span></h1>
+            <p>Mais que café, uma experiência.</p>
+            <form>
+                <button inputmode="submit" class="botao_inicio">Ver Cardápio</button>
+            </form>
         </section>
         
-        <section id="Contato">
-            <h2>Contato</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem a omnis, unde voluptatibus, explicabo eveniet excepturi odio asperiores, consequuntur beatae placeat accusamus assumenda vitae dicta at! Eligendi, libero! Sapiente, dolore?</p>
+        <section id="Sobre" class="sobre_nos">
+            <h1>Sobre nós</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius enim laboriosam totam a quisquam repellat beatae similique id? Et rerum asperiores facere ea molestiae distinctio dolorum praesentium deserunt autem?</p>
+            <form>
+                <button inputmode="submit" class="botao_sobre">Saiba Mais</button>
+            </form>
+            <img src="#" alt="Imagem da Empresa SmartCoffee">
+        </section>
+
+        <section id="Produtos" class="nossos_produtos">
+            <h1>Nossos Cafés</h1>
+            <article class="cafe_espresso">
+                <img src="#" alt="Café Espresso">
+                <p>R$ 7,90</p>
+                <form>
+                    <button inputmode="submit" class="cafes">Adicionar</button>
+                </form>
+            </article>
+
+            <article class="smoothie_chocolate">
+                <img src="#" alt="Smoothie de Chocolate">
+                <p>R$ 12,40</p>
+                <form>
+                    <button inputmode="submit" class="cafes">Adicionar</button>
+                </form>
+            </article>
+
+            <article class="cappuccino">
+                <img src="#" alt="Cappuccino">
+                <p>R$ 9,25</p>
+                <form>
+                    <button inputmode="submit" class="cafes">Adicionar</button>
+                </form>
+            </article>
+        </section>
+
+        <section>
+            <img src="#" alt="Ambiente da SmartCoffee">
+            <h1>Nosso Ambiente</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit saepe ipsa similique sequi amet maiores odio quisquam numquam dolores laudantium minima voluptate autem, eius dignissimos itaque cum mollitia quae.</p>
+            <form>
+                <button inputmode="submit" class="botao_ambiente">Conheça</button>
+            </form>
+        </section>
+
+        <section id="Contato" class="nosso_contato">
+            <h1>Contato</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae accusantium aliquid magnam quos reiciendis alias eveniet adipisci est neque quia perspiciatis officia harum asperiores, quas, assumenda voluptatem consequatur iusto.</p>
             <input type="text" placeholder="Nome:">
-            <input type="text" placeholder="Email:">
-            <input type="text" placeholder="Telefone:">
-            <input type="text" placeholder="Endereço">
-            <button class="ultimo_botao" type="submit">Enviar</button>
+            <input type="email" placeholder="Email:">
+            <input type="number" placeholder="Telefone:">
+            <input type="text" placeholder="Endereço:">
+            <form>
+                <button inputmode="submit" class="botao_contato">Enviar</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <h1>SmartCoffee</h1>
-        <nav>
-            <img src="#" alt="Instagram">
-            <img src="#" alt="Whatsapp">
-            <img src="#" alt="Tik Tok">
-            <img src="#" alt="Snapchat">
-        </nav>
+        <img src="#" alt="Logo SmartCoffee">
+        <h2>SmartCoffee</h2>
+        <img src="#" alt="Whatsapp">
+        <img src="#" alt="Instagram">
+        <img src="#" alt="Tik Tok">
+        <img src="#" alt="Facebook">
     </footer>
+    
 </body>
 </html>
