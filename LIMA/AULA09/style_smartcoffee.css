@@ -1,229 +1,352 @@
-/* body {
-    background-color: white;
-    margin: 10px;
-    padding: 10px;
-}
-
-header {
-    background-color: #2B1B17;
-    padding: 10px;
-}
-
-header h1 {
-    color: #E2B78C;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-nav a {
-    color: #E2B78C;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 5px;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-left: 200px;
-}
-
-section {
-    border: 30px;
-    border-width: 30px;
-    border-color: black;
-    padding: 20px;
-}
-
-
-#Inicio {
-    background-color: #FAEDCD;
-    border: 1px solid black;
-}
-
-#Inicio button {
-    background-color: #C67C4E ;
-    color: white;
-    font-weight: bold
-}
-
-#Sobre {
-    border: 1px solid black;
-}
-
-.ultimo_botao {
-  background: #C67C4E;
-  color: white;
-  font-weight: bold;
-  padding: 13px 26px;
-  border: none;
-  border-radius: 14px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.ultimo_botao:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
-}
-.ultimo_botao:active {
-  transform: translateY(-2px) scale(0.97);
-}
-
-.adicionar_botao {
-    background: #C67C4E;
-  color: white;
-  font-weight: bold;
-  padding: 13px 26px;
-  border: none;
-  border-radius: 14px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.adicionar_botao:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
-}
-.adicionar_botao:active {
-  transform: translateY(-2px) scale(0.97);
-} */
-
-
-
-
 /* =================================================================
-   CONFIGURAÇÕES GLOBAIS BÁSICAS
-   ================================================================= */
-
+CONFIGURAÇÕES GLOBAIS BÁSICAS
+================================================================= */
 body {
-    padding: 10px;
+padding: 5px;
+margin: 20px;
+}
+
+main {
+border-radius: 5px;
 }
 
 :root {
-    /* Paleta de Cores */
-    --espresso: #2B170D;
-    --cafe: #F4EAE1;
-    --caramelo: #C67C4E;
-    --creme: #FAEDCD;
-    --texto: #000000;
-    --branco: #FFFFFF;
-    --titulo: #E2B78C;
-
-    /* Fontes */
-    --fonte-principal: "Poppins", sans-serif;
-    --fonte-secundaria: "Open Sans"
+/* Paleta de Cores */
+--espresso: #2B170D;
+--cafe: #F4EAE1;
+--caramelo: #C67C4E;
+--creme: #FAEDCD;
+--texto: #000000;
+--branco: #FFFFFF;
+--titulo: #E2B78C;
+/* Fontes */
+--fonte-principal: "Poppins", sans-serif;
+--fonte-secundaria: "Open Sans";
 }
 
 h1, h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 1px;
+font-family: "Poppins", sans-serif;
+font-weight: 1px;
 }
 
 h2, ul {
-    font-family: "Poppins", sans-serif ;
-    font-weight: 2px;
-    color: var(--titulo);
+font-family: "Poppins", sans-serif;
+font-weight: 2px;
+color: var(--titulo);
+}
+
+h1 {
+font-size: 2rem;
+line-height: 1.1;
+}
+
+h2 {
+font-size: 1.5rem;
+}
+
+h3 {
+font-size: 1rem;
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+font-family: "Open Sans", sans-serif;
 }
 
 /* =================================================================
-   CABEÇALHO (HEADER)
-   ================================================================= */
-
+CABEÇALHO (HEADER)
+================================================================= */
 nav, ul, li, a {
-    text-decoration: none;
-    color: var(--titulo);
+text-decoration: none;
+color: var(--titulo);
 }
 
 header {
-    background-color: var(--espresso);
+background-color: var(--espresso);
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
 
 header p {
-    color: var(--texto);
+color: var(--texto);
 }
 
 .lista_pesquisa {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    gap: 5px;
-    height: 80px;
-    list-style: none;
-    margin: 0;
-    padding: 20px;
+display: flex;
+flex-direction: row;
+gap: 20px;
+list-style: none;
+margin: 15px 0 0 0;
+padding: 0;
+justify-content: center;
+}
+
+.lista_pesquisa a:hover {
+color: var(--branco);
+transition: color 0.3s ease;
+}
+
+.modo_escuro {
+margin-top: 15px;
+background-color: var(--caramelo);
+border-radius: 5px;
+font-weight: 10px;
+border: 1px var(--espresso) solid;
 }
 
 /* =================================================================
-   1. SEÇÃO INÍCIO
-   ================================================================= */
-
+SEÇÃO INÍCIO
+================================================================= */
 #Inicio {
-    background-color: var(--creme);
-    padding: 20px;
+background-color: var(--creme);
+padding: 20px;
 }
 
 .pagina_inicial p {
-    font-weight: 2px;
+font-weight: 2px;
 }
 
 span {
-    color: var(--caramelo);
+color: var(--caramelo);
 }
 
 .botao_inicio {
-    background: var(--caramelo);
-    color: var(--branco);
-    font-weight: bold;
-    padding: 13px 26px;
-    border: none;
-    border-radius: 14px;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+background: var(--caramelo);
+color: var(--branco);
+font-weight: bold;
+padding: 13px 26px;
+border: none;
+border-radius: 14px;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .botao_inicio:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+transform: translateY(-8px);
+box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
 }
+
 .botao_inicio:active {
-    transform: translateY(-2px) scale(0.97);
+transform: translateY(-2px) scale(0.97);
 }
 
 /* =================================================================
-   2. SEÇÃO SOBRE
-   ================================================================= */
-
-
-/* =================================================================
-   3. SEÇÃO PRODUTOS (CAFÉS)
-   ================================================================= */
-
-
-/* =================================================================
-   4. SEÇÃO AMBIENTE
-   ================================================================= */
-
-
-/* =================================================================
-   5. SEÇÃO CONTATO
-   ================================================================= */
-
-.ultimo_botao {
-  background: #C67C4E;
-  color: white;
-  font-weight: bold;
-  padding: 13px 26px;
-  border: none;
-  border-radius: 14px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+SEÇÃO SOBRE
+================================================================= */
+#Sobre {
+background-color: var(--branco);
+padding: 20px;
 }
-.ultimo_botao:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+
+.botao_sobre {
+background: var(--caramelo);
+color: var(--branco);
+font-weight: bold;
+padding: 13px 26px;
+border: none;
+border-radius: 14px;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
 }
-.ultimo_botao:active {
-  transform: translateY(-2px) scale(0.97);
+
+.botao_sobre:hover {
+transform: translateY(-8px);
+box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+
+.botao_sobre:active {
+transform: translateY(-2px) scale(0.97);
 }
 
 /* =================================================================
-   6. RODAPÉ (FOOTER)
-   ================================================================= */
+SEÇÃO PRODUTOS (CAFÉS)
+================================================================= */
+#Produtos {
+background-color: var(--cafe);
+padding: 40px 20px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+justify-items: center;
+}
+
+#Produtos h1 {
+grid-column: span 3;
+font-weight: bold;
+color: var(--texto);
+margin-bottom: 20px;
+}
+
+#Produtos p {
+text-align: center;
+margin: 15px;
+font-weight: bold;
+}
+
+#Produtos article {
+display: grid;
+justify-items: center;
+width: 100%;
+max-width: 280px;
+}
+
+#Produtos article img {
+width: 100%;
+height: 130px;
+background-color: #524343;
+border-radius: 4px;
+}
+
+.cafes {
+background: var(--caramelo);
+color: var(--branco);
+font-weight: bold;
+padding: 13px 26px;
+border: none;
+border-radius: 14px;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cafes:hover {
+transform: translateY(-8px);
+box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+
+.cafes:active {
+transform: translateY(-2px) scale(0.97);
+}
+
+/* =================================================================
+SEÇÃO AMBIENTE
+================================================================= */
+#Ambiente {
+background-color: var(--branco);
+padding: 20px;
+}
+
+#Ambiente article img {
+width: 100%;
+height: 130px;
+background-color: #524343;
+border-radius: 4px;
+}
+
+.botao_ambiente {
+background: var(--caramelo);
+color: var(--branco);
+font-weight: bold;
+padding: 13px 26px;
+border: none;
+border-radius: 14px;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botao_ambiente:hover {
+transform: translateY(-8px);
+box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+
+.botao_ambiente:active {
+transform: translateY(-2px) scale(0.97);
+}
+
+/* =================================================================
+SEÇÃO CONTATO
+================================================================= */
+#Contato {
+background-color: var(--creme);
+padding: 20px;
+}
+
+#Contato input {
+display: flex;
+align-items: right;
+margin-top: 10px;
+border: 1px var(--texto) solid;
+border-radius: 5px;
+}
+
+.formulario_contato {
+display: grid;
+justify-items: end;
+gap: 0.1px;
+}
+
+.formulario_contato input, button {
+width: 500px;
+margin: 20px;
+}
+
+.botao_contato {
+background: var(--caramelo);
+color: var(--branco);
+font-weight: bold;
+padding: 13px 26px;
+border: none;
+border-radius: 14px;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botao_contato:hover {
+transform: translateY(-8px);
+box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+
+.botao_contato:active {
+transform: translateY(-2px) scale(0.97);
+}
+
+/* =================================================================
+RODAPÉ (FOOTER)
+================================================================= */
+.rodape {
+background-color: var(--espresso);
+color: var(--titulo);
+padding: 20px;
+}
+
+.redes_sociais {
+display: grid;
+grid-template-columns: 4, 1fr;
+list-style: none;
+height: 24px;
+width: 100%;
+background-color: var(--branco);
+border-radius: 105px;
+}
+
+/* =================================================================
+RESPONSIVIDADE
+================================================================= */
+/* Celular */
+@media (max-width: 320px) {
+#Produtos {
+grid-template-columns: repeat(1, 1fr);
+gap: 24px;
+}
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+#Produtos {
+grid-template-columns: repeat(
+auto-fit, minmax(220px, 1fr)
+);
+gap: 24px;
+}
+}
+
+/* Desktop */
+@media (max-width: 1024px) {
+#Produtos {
+grid-template-columns: repeat(
+auto-fit, minmax(220px, 1fr)
+);
+gap: 24px;
+}
+}

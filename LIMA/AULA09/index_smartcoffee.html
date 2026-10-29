@@ -10,7 +10,7 @@
     <title>SmartCoffee do Pedro</title>
 </head>
 <body>
-    
+   
     <header>
         <h2>SmartCoffee</h2>
         <nav>
@@ -21,6 +21,18 @@
                 <li><a href="Ambiente">Ambiente</a></li>
                 <li><a href="Contato">Contato</a></li>
             </ul>
+           
+            <button class="modo_escuro" onclick="toggleDarkMode()">Modo Escuro 🌙</button>
+           
+            <script>
+                let isDark = false;
+
+                function toggleDarkMode() {
+                    isDark = !isDark;
+                    document.body.style.background = isDark ?
+                    "white": "black";
+                }
+            </script>
         </nav>
     </header>
 
@@ -31,8 +43,9 @@
             <form>
                 <button inputmode="submit" class="botao_inicio">Ver Cardápio</button>
             </form>
+            <img src="#" alt="Imagem SmartCoffee">
         </section>
-        
+       
         <section id="Sobre" class="sobre_nos">
             <h1>Sobre nós</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius enim laboriosam totam a quisquam repellat beatae similique id? Et rerum asperiores facere ea molestiae distinctio dolorum praesentium deserunt autem?</p>
@@ -45,7 +58,7 @@
         <section id="Produtos" class="nossos_produtos">
             <h1>Nossos Cafés</h1>
             <article class="cafe_espresso">
-                <img src="#" alt="Café Espresso">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Fjsm2iwucf5EFHGGsi_8WHZ90NjFsqGGAZ1RlI3GoKrwWZR40YwfBUj3&s=10" alt="Café Espresso">
                 <p>R$ 7,90</p>
                 <form>
                     <button inputmode="submit" class="cafes">Adicionar</button>
@@ -53,7 +66,7 @@
             </article>
 
             <article class="smoothie_chocolate">
-                <img src="#" alt="Smoothie de Chocolate">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg9hTe5IxEbits90sNbaJVdDhn56csmcjN2gT76DXIB1U5wWJoxidMnTg&s=10" alt="Smoothie de Chocolate">
                 <p>R$ 12,40</p>
                 <form>
                     <button inputmode="submit" class="cafes">Adicionar</button>
@@ -61,7 +74,7 @@
             </article>
 
             <article class="cappuccino">
-                <img src="#" alt="Cappuccino">
+                <img src="https://cdn0.tudoreceitas.com/pt/posts/7/7/0/cappuccino_funcional_3077_1200.jpg" alt="Cappuccino">
                 <p>R$ 9,25</p>
                 <form>
                     <button inputmode="submit" class="cafes">Adicionar</button>
@@ -69,7 +82,7 @@
             </article>
         </section>
 
-        <section>
+        <section id="Ambiente" class="nosso_ambiente">
             <img src="#" alt="Ambiente da SmartCoffee">
             <h1>Nosso Ambiente</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit saepe ipsa similique sequi amet maiores odio quisquam numquam dolores laudantium minima voluptate autem, eius dignissimos itaque cum mollitia quae.</p>
@@ -81,24 +94,26 @@
         <section id="Contato" class="nosso_contato">
             <h1>Contato</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae accusantium aliquid magnam quos reiciendis alias eveniet adipisci est neque quia perspiciatis officia harum asperiores, quas, assumenda voluptatem consequatur iusto.</p>
-            <input type="text" placeholder="Nome:">
-            <input type="email" placeholder="Email:">
-            <input type="number" placeholder="Telefone:">
-            <input type="text" placeholder="Endereço:">
-            <form>
+            <form class="formulario_contato">
+                <input type="text" placeholder="Nome:">
+                <input type="email" placeholder="Email:">
+                <input type="number" placeholder="Telefone:">
+                <input type="text" placeholder="Endereço:">
                 <button inputmode="submit" class="botao_contato">Enviar</button>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
         <img src="#" alt="Logo SmartCoffee">
         <h2>SmartCoffee</h2>
-        <img src="#" alt="Whatsapp">
-        <img src="#" alt="Instagram">
-        <img src="#" alt="Tik Tok">
-        <img src="#" alt="Facebook">
+        <ul class="redes_sociais">    
+            <li><img src="#" alt="Whatsapp"></li>
+            <li><img src="#" alt="Instagram"></li>
+            <li><img src="#" alt="Tik Tok"></li>
+            <li><img src="#" alt="Facebook"></li>
+        </ul>
     </footer>
-    
+   
 </body>
 </html>
