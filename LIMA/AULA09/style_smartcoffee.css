@@ -163,60 +163,62 @@ transform: translateY(-2px) scale(0.97);
 /* =================================================================
 SEÇÃO PRODUTOS (CAFÉS)
 ================================================================= */
-#Produtos {
-background-color: var(--cafe);
-padding: 40px 20px;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 30px;
-justify-items: center;
+
+.lista_cafes {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    
 }
 
+
 #Produtos h1 {
-grid-column: span 3;
-font-weight: bold;
-color: var(--texto);
-margin-bottom: 20px;
+    grid-column: span 3;
+    font-weight: bold;
+    color: var(--texto);
+    margin-bottom: 20px;
 }
 
 #Produtos p {
-text-align: center;
-margin: 15px;
-font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
 }
 
 #Produtos article {
-display: grid;
-justify-items: center;
-width: 100%;
-max-width: 280px;
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    max-width: 280px;
 }
 
 #Produtos article img {
-width: 100%;
-height: 130px;
-background-color: #524343;
-border-radius: 4px;
+    width: 100%;
+    height: 130px;
+    background-color: #524343;
+    border-radius: 4px;
 }
 
 .cafes {
-background: var(--caramelo);
-color: var(--branco);
-font-weight: bold;
-padding: 13px 26px;
-border: none;
-border-radius: 14px;
-cursor: pointer;
-transition: transform 0.2s, box-shadow 0.2s;
+    background: var(--caramelo);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .cafes:hover {
-transform: translateY(-8px);
-box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
 }
 
 .cafes:active {
-transform: translateY(-2px) scale(0.97);
+    transform: translateY(-2px) scale(0.97);
 }
 
 /* =================================================================
@@ -325,28 +327,22 @@ RESPONSIVIDADE
 ================================================================= */
 /* Celular */
 @media (max-width: 320px) {
-#Produtos {
-grid-template-columns: repeat(1, 1fr);
-gap: 24px;
-}
+
+    .lista_cafes {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
-#Produtos {
-grid-template-columns: repeat(
-auto-fit, minmax(220px, 1fr)
-);
-gap: 24px;
-}
+    .lista_cafes {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* Desktop */
 @media (max-width: 1024px) {
-#Produtos {
-grid-template-columns: repeat(
-auto-fit, minmax(220px, 1fr)
-);
-gap: 24px;
-}
+    .lista_cafes {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
