@@ -1,205 +1,230 @@
 /* =================================================================
 CONFIGURAÇÕES GLOBAIS BÁSICAS
 ================================================================= */
-body {
-padding: 5px;
-margin: 20px;
+/* body {
+    padding: 5px;
+    margin: 20px;
 }
 
 main {
-border-radius: 5px;
-}
+    border-radius: 5px;
+} */
 
-:root {
-/* Paleta de Cores */
---espresso: #2B170D;
---cafe: #F4EAE1;
---caramelo: #C67C4E;
---creme: #FAEDCD;
---texto: #000000;
---branco: #FFFFFF;
---titulo: #E2B78C;
-/* Fontes */
---fonte-principal: "Poppins", sans-serif;
---fonte-secundaria: "Open Sans";
-}
+/* :root { */
+    /* Paleta de Cores */
+    /* --espresso: #2B170D;
+    --cafe: #F4EAE1;
+    --caramelo: #C67C4E;
+    --creme: #FAEDCD;
+    --texto: #000000;
+    --branco: #FFFFFF;
+    --titulo: #E2B78C; */
+    /* Fontes */
+    /* --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: "Open Sans";
+} */
 
-h1, h3 {
-font-family: "Poppins", sans-serif;
-font-weight: 1px;
+/* h1, h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 1px;
 }
 
 h2, ul {
-font-family: "Poppins", sans-serif;
-font-weight: 2px;
-color: var(--titulo);
+    font-family: "Poppins", sans-serif;
+    font-weight: 2px;
+    color: var(--titulo);
 }
 
 h1 {
-font-size: 2rem;
-line-height: 1.1;
+    font-size: 2rem;
+    line-height: 1.1;
 }
 
 h2 {
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 h3 {
-font-size: 1rem;
+    font-size: 1rem;    
 }
 
 p {
-font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+} */
 
 /* =================================================================
 CABEÇALHO (HEADER)
 ================================================================= */
-nav, ul, li, a {
-text-decoration: none;
-color: var(--titulo);
+/* nav, ul, li, a {
+    text-decoration: none;
+    color: var(--titulo); 
 }
 
 header {
-background-color: var(--espresso);
-padding: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
+    background-color: var(--espresso);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 header p {
-color: var(--texto);
+    color: var(--texto);
 }
 
 .lista_pesquisa {
-display: flex;
-flex-direction: row;
-gap: 20px;
-list-style: none;
-margin: 15px 0 0 0;
-padding: 0;
-justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    justify-content: center;
 }
 
 .lista_pesquisa a:hover {
-color: var(--branco);
-transition: color 0.3s ease;
+    color: var(--branco);
+    transition: color 0.3s ease;
 }
 
 .modo_escuro {
-margin-top: 15px;
-background-color: var(--caramelo);
-border-radius: 5px;
-font-weight: 10px;
-border: 1px var(--espresso) solid;
+    background: var(--caramelo);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
+
+.modo_escuro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+
+.modo_escuro:active {
+    transform: translateY(-2px) scale(0.97);
+} */
 
 /* =================================================================
 SEÇÃO INÍCIO
 ================================================================= */
-#Inicio {
-background-color: var(--creme);
-padding: 20px;
+/* #inicio {
+    background-color: #DFD2C3;
+    padding: 20px;
 }
 
 .pagina_inicial p {
-font-weight: 2px;
+    font-weight: 2px;
+    color: var(--texto);
 }
 
 span {
-color: var(--caramelo);
+    color: var(--caramelo);
 }
 
 .botao_inicio {
-background: var(--caramelo);
-color: var(--branco);
-font-weight: bold;
-padding: 13px 26px;
-border: none;
-border-radius: 14px;
-cursor: pointer;
-transition: transform 0.2s, box-shadow 0.2s;
+    background: var(--caramelo);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .botao_inicio:hover {
-transform: translateY(-8px);
-box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
 }
 
 .botao_inicio:active {
-transform: translateY(-2px) scale(0.97);
-}
+    transform: translateY(-2px) scale(0.97);
+} */
 
 /* =================================================================
 SEÇÃO SOBRE
 ================================================================= */
-#Sobre {
-background-color: var(--branco);
-padding: 20px;
+/* #sobre {
+    background-color: var(--creme);
+    padding: 10px;
+}
+
+#sobre p {
+    color: var(--texto);
 }
 
 .botao_sobre {
-background: var(--caramelo);
-color: var(--branco);
-font-weight: bold;
-padding: 13px 26px;
-border: none;
-border-radius: 14px;
-cursor: pointer;
-transition: transform 0.2s, box-shadow 0.2s;
+    background: var(--caramelo);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .botao_sobre:hover {
-transform: translateY(-8px);
-box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
 }
 
 .botao_sobre:active {
-transform: translateY(-2px) scale(0.97);
-}
+    transform: translateY(-2px) scale(0.97);
+} */
 
 /* =================================================================
 SEÇÃO PRODUTOS (CAFÉS)
 ================================================================= */
 
-.lista_cafes {
+/* .nossos_produtos {
+    background-color: #A67B5B;
+}
+
+.lista_cafes, .cafes {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
-    
 }
 
-
-#Produtos h1 {
-    grid-column: span 3;
+#produtos h1 {
     font-weight: bold;
-    color: var(--texto);
-    margin-bottom: 20px;
+    color: var(--branco);
+    margin: 5px;
+    padding: 10px;
 }
 
-#Produtos p {
+#produtos p {
     text-align: center;
     margin: 15px;
     font-weight: bold;
-}
+    color: var(--branco);
+} */
 
-#Produtos article {
+/* #produtos article {
     display: grid;
     justify-items: center;
     width: 100%;
     max-width: 280px;
-}
+}  */
 
-#Produtos article img {
+/* #produtos article img {
     width: 100%;
     height: 130px;
-    background-color: #524343;
+    padding: 20px 20px;
     border-radius: 4px;
-}
+    gap: 20px;
+} 
 
 .cafes {
     background: var(--caramelo);
@@ -219,130 +244,570 @@ SEÇÃO PRODUTOS (CAFÉS)
 
 .cafes:active {
     transform: translateY(-2px) scale(0.97);
+} */
+
+/* =================================================================
+SEÇÃO AMBIENTE
+================================================================= */
+
+/* .nosso_ambiente {
+    background: linear-gradient(to right, var(--espresso), var(--caramelo));
+}
+
+.nosso_ambiente h1, p {
+    color:var(--branco);
+    font-weight: bold;
+}
+
+#ambiente {
+    padding: 20px;
+}
+
+#ambiente article img {
+    width: 100%;
+    height: 130px;
+    background-color: #524343;
+    border-radius: 4px;
+}
+
+.botao_ambiente {
+    background: var(--caramelo);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botao_ambiente:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+
+.botao_ambiente:active {
+    transform: translateY(-2px) scale(0.97);
+} */
+
+/* =================================================================
+SEÇÃO CONTATO
+================================================================= */
+/* #contato {
+    background-color: var(--creme);
+    padding: 20px;
+}
+
+#contato p {
+    font-weight: bold;
+    color: var(--texto);
+}
+
+#contato input {
+    display: flex;
+    align-items: right;
+    margin-top: 10px;
+    border: 1px var(--texto) solid;
+    border-radius: 5px;
+}
+
+.formulario_contato {
+    display: grid;
+    justify-items: end;
+    gap: 0.1px;
+}
+
+.formulario_contato input, button {
+    width: 500px;
+    margin: 20px;
+}
+
+.formulario {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.botao_contato {
+    background: var(--caramelo);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botao_contato:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
+}
+
+.botao_contato:active {
+    transform: translateY(-2px) scale(0.97);
+} */
+
+/* =================================================================
+RODAPÉ (FOOTER)
+================================================================= */
+/* .rodape {
+    background-color: var(--espresso);
+    color: var(--titulo);
+    padding: 20px;
+}
+
+.redes_sociais {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    height: 24px;
+    width: 100%;
+    background-color: var(--branco);
+    border-radius: 105px;
+}
+
+.redes_sociais {
+    background-color: transparent;
+    gap: 1px;
+} */
+
+/* =================================================================
+RESPONSIVIDADE
+================================================================= */
+/* Celular */
+/* @media (max-width: 320px) {
+
+    .lista_cafes, .cafes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
+/* Tablet */
+/* @media (max-width: 768px) {
+    .lista_cafes, .cafes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
+/* Desktop */
+/* @media (max-width: 1024px) {
+    .lista_cafes, .cafes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
+/* ---------------------------------------------------------------- */
+
+/* Celular */
+/* @media (max-width: 320px) {
+
+    .formulario {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
+/* Tablet */
+/* @media (max-width: 768px) {
+    .formulario {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
+/* Desktop */
+/* @media (max-width: 1024px) {
+    .formulario {
+        grid-template-columns: repeat(5, 5fr);
+    }
+} */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* =================================================================
+CONFIGURAÇÕES GLOBAIS BÁSICAS
+================================================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #FAF9F6;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root {
+    --espresso: #2B170D;
+    --cafe: #F4EAE1;
+    --caramelo: #C67C4E;
+    --creme: #FAEDCD;
+    --texto: #222222;
+    --branco: #FFFFFF;
+    --titulo: #E2B78C;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =================================================================
+CABEÇALHO (HEADER)
+================================================================= */
+header {
+    background-color: var(--espresso);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h2 {
+    color: var(--titulo);
+    margin: 0;
+}
+
+.lista_pesquisa {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.lista_pesquisa a {
+    text-decoration: none;
+    color: var(--titulo);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.lista_pesquisa a:hover {
+    color: var(--branco);
+}
+
+.modo_escuro {
+    background: var(--caramelo);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    margin-left: 20px;
+}
+
+.modo_escuro:hover {
+    background: #a9653c;
+    transform: translateY(-2px);
+}
+
+/* =================================================================
+SEÇÕES PRINCIPAIS (ESTILOS PADRÃO)
+================================================================= */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section p {
+    max-width: 600px;
+    margin: 15px auto 25px auto;
+    line-height: 1.6;
+}
+
+/* Seção Início */
+#inicio {
+    background: linear-gradient(135deg, #DFD2C3, #f5efe6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: 0 0 20px 20px;
+}
+
+#inicio .conteudo_texto {
+    flex: 1;
+}
+
+#inicio span {
+    color: var(--caramelo);
+}
+
+#inicio img {
+    max-width: 45%;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: var(--creme);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+
+#sobre img {
+    max-width: 45%;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Botões Gerais */
+.botao_inicio, .botao_sobre, .botao_ambiente, .cafes, .botao_contato {
+    background: var(--caramelo);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao_inicio:hover, .botao_sobre:hover, .botao_ambiente:hover, .cafes:hover, .botao_contato:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: #b56c40;
+}
+
+/* =================================================================
+SEÇÃO PRODUTOS (CAFÉS)
+================================================================= */
+.nossos_produtos {
+    background-color: #A67B5B;
+    border-radius: 20px;
+    margin: 30px auto;
+    color: var(--branco);
+}
+
+.nossos_produtos h1 {
+    color: var(--branco);
+    margin-bottom: 30px;
+}
+
+.lista_cafes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+}
+
+.cafe_card {
+    background: var(--branco);
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cafe_card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cafe_card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0 5px 0;
+}
+
+.cafe_card p {
+    font-weight: bold;
+    color: var(--caramelo);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 /* =================================================================
 SEÇÃO AMBIENTE
 ================================================================= */
-#Ambiente {
-background-color: var(--branco);
-padding: 20px;
+.nosso_ambiente {
+    background: linear-gradient(135deg, var(--espresso), var(--caramelo));
+    color: var(--branco);
+    border-radius: 20px;
+    margin: 30px auto;
 }
 
-#Ambiente article img {
-width: 100%;
-height: 130px;
-background-color: #524343;
-border-radius: 4px;
+.nosso_ambiente h1, .nosso_ambiente p {
+    color: var(--branco);
 }
 
-.botao_ambiente {
-background: var(--caramelo);
-color: var(--branco);
-font-weight: bold;
-padding: 13px 26px;
-border: none;
-border-radius: 14px;
-cursor: pointer;
-transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.botao_ambiente:hover {
-transform: translateY(-8px);
-box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
-}
-
-.botao_ambiente:active {
-transform: translateY(-2px) scale(0.97);
+.nosso_ambiente img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 /* =================================================================
 SEÇÃO CONTATO
 ================================================================= */
-#Contato {
-background-color: var(--creme);
-padding: 20px;
-}
-
-#Contato input {
-display: flex;
-align-items: right;
-margin-top: 10px;
-border: 1px var(--texto) solid;
-border-radius: 5px;
+#contato {
+    background-color: var(--creme);
+    border-radius: 20px;
+    margin: 30px auto;
 }
 
 .formulario_contato {
-display: grid;
-justify-items: end;
-gap: 0.1px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
 }
 
-.formulario_contato input, button {
-width: 500px;
-margin: 20px;
+.formulario_contato input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.formulario_contato input:focus {
+    border-color: var(--caramelo);
 }
 
 .botao_contato {
-background: var(--caramelo);
-color: var(--branco);
-font-weight: bold;
-padding: 13px 26px;
-border: none;
-border-radius: 14px;
-cursor: pointer;
-transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.botao_contato:hover {
-transform: translateY(-8px);
-box-shadow: 0 16px 22px -8px rgba(0, 0, 0, 0.35);
-}
-
-.botao_contato:active {
-transform: translateY(-2px) scale(0.97);
+    width: 100%;
+    margin-top: 5px;
 }
 
 /* =================================================================
 RODAPÉ (FOOTER)
 ================================================================= */
 .rodape {
-background-color: var(--espresso);
-color: var(--titulo);
-padding: 20px;
+    background-color: var(--espresso);
+    color: var(--titulo);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.rodape p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin: 8px 0 20px 0;
 }
 
 .redes_sociais {
-display: grid;
-grid-template-columns: 4, 1fr;
-list-style: none;
-height: 24px;
-width: 100%;
-background-color: var(--branco);
-border-radius: 105px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.redes_sociais a {
+    color: var(--titulo);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.redes_sociais a:hover {
+    color: var(--branco);
 }
 
 /* =================================================================
-RESPONSIVIDADE
+MODO ESCURO (DARK MODE CLASSE)
 ================================================================= */
-/* Celular */
-@media (max-width: 320px) {
-
-    .lista_cafes {
-        grid-template-columns: repeat(1, 1fr);
-    }
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
-/* Tablet */
+body.dark-mode #inicio {
+    background: linear-gradient(135deg, #1e1e1e, #2d241e);
+}
+
+body.dark-mode #sobre, 
+body.dark-mode #contato {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .cafe_card {
+    background: #242424;
+    color: #e0e0e0;
+}
+
+body.dark-mode input {
+    background-color: #2a2a2a;
+    color: #fff;
+    border-color: #444;
+}
+
+/* =================================================================
+RESPONSIVIDADE (CELULARES E TABLETS)
+================================================================= */
 @media (max-width: 768px) {
-    .lista_cafes {
-        grid-template-columns: repeat(1, 1fr);
+    header {
+        flex-direction: column;
+        gap: 15px;
     }
-}
 
-/* Desktop */
-@media (max-width: 1024px) {
+    .lista_pesquisa {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #inicio, #sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #inicio img, #sobre img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
     .lista_cafes {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 }

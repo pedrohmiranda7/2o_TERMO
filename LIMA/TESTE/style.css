@@ -1,0 +1,203 @@
+/* ================================================= */
+/* 1. CONFIGURAÇÕES GERAIS DA PÁGINA                  */
+/* ================================================= */
+body {
+    background-color: #0b0916; /* Fundo escuro da página */
+    color: #ffffff; /* Cor padrão do texto em branco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Deixa os links sem sublinhado e brancos */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ================================================= */
+/* 2. CABEÇALHO                                      */
+/* ================================================= */
+header {
+    background-color: #121026;
+    padding: 20px;
+}
+
+header h2 {
+    font-size: 24px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Deixa a palavra PLAY em rosa */
+header h2 span {
+    color: #ff2a75;
+}
+
+/* Menu de navegação do cabeçalho */
+.barra_navegação {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.barra_navegação li {
+    display: inline-block; /* Coloca os itens um ao lado do outro */
+    margin: 0 5px;
+}
+
+/* Botão do cabeçalho */
+.botao_sobre {
+    background-color: transparent;
+    border: 2px solid #ff2a75;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+/* ================================================= */
+/* 3. PRIMEIRA PARTE (INÍCIO)                        */
+/* ================================================= */
+.primeira_parte {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.primeira_parte h1 {
+    font-size: 32px;
+}
+
+.botao_play {
+    background-color: #ff2a75;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+/* ================================================= */
+/* 4. SEÇÃO CLÁSSICOS                                */
+/* ================================================= */
+#classicos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Estilo para os blocos de filmes lado a lado usando Grid */
+#classicos {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Faz os textos de introdução ocuparem o topo inteiro (as 2 colunas) */
+#classicos h6,
+#classicos h1,
+#classicos > p {
+    grid-column: 1 / -1;
+}
+
+.filme_um, 
+.filme_dois {
+    background-color: #161330;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+/* ================================================= */
+/* 5. SEÇÃO HERÓIS                                   */
+/* ================================================= */
+.herois_classicos {
+    padding: 40px 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Faz os títulos da seção de heróis ocuparem todas as colunas */
+.herois_classicos > p,
+.herois_classicos h1,
+.herois_classicos > p + p {
+    grid-column: 1 / -1;
+}
+
+.herois_classicos p span {
+    color: #ff2a75;
+    font-weight: bold;
+}
+
+.sessao_herois {
+    background-color: #161330;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+/* ================================================= */
+/* 6. ÚLTIMA PARTE                                   */
+/* ================================================= */
+.ultima_parte {
+    padding: 40px 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Faz os títulos da última parte ocuparem todas as colunas */
+.ultima_parte > p,
+.ultima_parte h1 {
+    grid-column: 1 / -1;
+}
+
+.ultima_parte p span {
+    color: #ff2a75;
+}
+
+.x_men, 
+.simpsons, 
+.gravity_falls {
+    background-color: #161330;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+/* ================================================= */
+/* 7. PÁGINA COLORIDA E RODAPÉ                       */
+/* ================================================= */
+.pagina_colorida {
+    /* Gradiente igual ao rodapé da imagem de referência */
+    background: linear-gradient(90deg, #7b3fe4, #ff2a75);
+    text-align: center;
+    padding: 50px 20px;
+    margin: 40px 0;
+    grid-column: 1 / -1; /* Garante que ocupe a tela toda se herdado */
+}
+
+.rodape {
+    background-color: #0b0916;
+    text-align: center;
+    padding: 40px 20px;
+    grid-column: 1 / -1;
+}
+
+.rodape h2 span {
+    color: #ff2a75;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
