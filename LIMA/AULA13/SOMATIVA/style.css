@@ -384,6 +384,7 @@ header h1 {
   color: var(--texto-suave);
   font-size: 13px;
   text-align: center;
+  justify-content: center;
 }
 
 /* -------------------------------------------------------------------------------------------
