@@ -1,203 +1,372 @@
-/* ================================================= */
-/* 1. CONFIGURAÇÕES GERAIS DA PÁGINA                  */
-/* ================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 body {
-    background-color: #0b0916; /* Fundo escuro da página */
-    color: #ffffff; /* Cor padrão do texto em branco */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #0b0b14;
+  color: #ffffff;
 }
 
-/* Deixa os links sem sublinhado e brancos */
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-/* ================================================= */
-/* 2. CABEÇALHO                                      */
-/* ================================================= */
+ul {
+  list-style: none;
+}
+
 header {
-    background-color: #121026;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #0b0b14;
 }
 
-header h2 {
-    font-size: 24px;
-    text-align: left;
-    vertical-align: middle;
+header h1 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-/* Deixa a palavra PLAY em rosa */
-header h2 span {
-    color: #ff2a75;
+header h1 span {
+  color: #ff2b6d;
 }
 
-/* Menu de navegação do cabeçalho */
-.barra_navegação {
-    list-style: none;
-    padding: 0;
-    text-align: right;
-    vertical-align: middle;
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.barra_navegação li {
-    display: inline-block; /* Coloca os itens um ao lado do outro */
-    margin: 0 5px;
+.links a {
+  font-size: 14px;
+  color: #a0a0b0;
 }
 
-/* Botão do cabeçalho */
 .botao_sobre {
-    background-color: transparent;
-    border: 2px solid #ff2a75;
-    padding: 8px 20px;
-    border-radius: 20px;
-    margin-top: 10px;
+  background: transparent;
+  border: 1px solid #ff2b6d;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
 }
 
-/* ================================================= */
-/* 3. PRIMEIRA PARTE (INÍCIO)                        */
-/* ================================================= */
+.botao_sobre a {
+  color: #ff2b6d;
+  font-size: 14px;
+}
+
 .primeira_parte {
-    text-align: center;
-    padding: 60px 20px;
+  padding: 60px 80px;
+  position: relative;
+  min-height: 450px;
+}
+
+.primeira_parte > p:first-child span {
+  color: #ff2b6d;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .primeira_parte h1 {
-    font-size: 32px;
+  font-size: 42px;
+  max-width: 500px;
+  margin: 15px 0 20px 0;
+  line-height: 1.1;
 }
 
-.botao_play {
-    background-color: #ff2a75;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 25px;
-    margin-top: 20px;
+.primeira_parte > p:nth-of-type(2) {
+  color: #a0a0b0;
+  max-width: 450px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
-/* ================================================= */
-/* 4. SEÇÃO CLÁSSICOS                                */
-/* ================================================= */
-#classicos {
-    padding: 40px 20px;
-    text-align: center;
+.apertar_play {
+  background-color: #ff2b6d;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
-/* Estilo para os blocos de filmes lado a lado usando Grid */
-#classicos {
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    justify-content: center;
-    gap: 20px;
+.apertar_play a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-/* Faz os textos de introdução ocuparem o topo inteiro (as 2 colunas) */
-#classicos h6,
-#classicos h1,
-#classicos > p {
-    grid-column: 1 / -1;
+.primeira_parte img {
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  width: 320px;
+  height: 320px;
+  background-color: #12132b;
+  border-radius: 16px;
+  object-fit: cover;
 }
 
-.filme_um, 
-.filme_dois {
-    background-color: #161330;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 0;
+.segunda_parte {
+  padding: 60px 80px;
+  background-color: #0b0b14;
 }
 
-/* ================================================= */
-/* 5. SEÇÃO HERÓIS                                   */
-/* ================================================= */
+.segunda_parte > p:first-child span {
+  color: #ff2b6d;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.segunda_parte h1 {
+  font-size: 28px;
+  margin: 10px 0 15px 0;
+}
+
+.segunda_parte > p:nth-of-type(2) {
+  color: #a0a0b0;
+  max-width: 600px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.filmes_classicos {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin-right: 4%;
+  background-color: #12132b;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.filmes_classicos:last-of-type {
+  margin-right: 0;
+}
+
+.filmes_classicos img {
+  width: 100%;
+  height: 200px;
+  background-color: #5c42f5;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.filmes_classicos:last-of-type img {
+  background-color: #ff2b6d;
+}
+
+.filmes_classicos p span {
+  color: #00d2ff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.filmes_classicos h4 {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.terceira_parte {
+  padding: 60px 80px;
+  background-color: #07070d;
+}
+
+.terceira_parte > p:first-child span {
+  color: #ff2b6d;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.terceira_parte h1 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.terceira_parte > p:nth-of-type(2) {
+  color: #a0a0b0;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
 .herois_classicos {
-    padding: 40px 20px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    justify-content: center;
-    gap: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin-right: 2%;
+  background-color: #12132b;
+  border-radius: 12px;
+  padding: 15px;
 }
 
-/* Faz os títulos da seção de heróis ocuparem todas as colunas */
-.herois_classicos > p,
-.herois_classicos h1,
-.herois_classicos > p + p {
-    grid-column: 1 / -1;
+.herois_classicos:last-of-type {
+  margin-right: 0;
+}
+
+.herois_classicos img {
+  width: 100%;
+  height: 160px;
+  background-color: #ff2b6d;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.herois_classicos:nth-of-type(2) img {
+  background-color: #00d2ff;
+}
+
+.herois_classicos:nth-of-type(3) img {
+  background-color: #ffcc00;
 }
 
 .herois_classicos p span {
-    color: #ff2a75;
-    font-weight: bold;
+  color: #00d2ff;
+  font-size: 11px;
+  font-weight: bold;
 }
 
-.sessao_herois {
-    background-color: #161330;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 0;
+.herois_classicos h4 {
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 5px;
 }
 
-/* ================================================= */
-/* 6. ÚLTIMA PARTE                                   */
-/* ================================================= */
-.ultima_parte {
-    padding: 40px 20px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    justify-content: center;
-    gap: 20px;
+.quarta_parte {
+  padding: 60px 80px;
+  background-color: #0b0b14;
 }
 
-/* Faz os títulos da última parte ocuparem todas as colunas */
-.ultima_parte > p,
-.ultima_parte h1 {
-    grid-column: 1 / -1;
+.quarta_parte > p:first-child span {
+  color: #ff2b6d;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.ultima_parte p span {
-    color: #ff2a75;
+.quarta_parte h1 {
+  font-size: 28px;
+  margin: 10px 0 40px 0;
 }
 
-.x_men, 
-.simpsons, 
-.gravity_falls {
-    background-color: #161330;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 0;
+.x_men, .simpsons, .gravity_falls {
+  background-color: #ffcc00;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  min-height: 100px;
+  color: #000000;
 }
 
-/* ================================================= */
-/* 7. PÁGINA COLORIDA E RODAPÉ                       */
-/* ================================================= */
-.pagina_colorida {
-    /* Gradiente igual ao rodapé da imagem de referência */
-    background: linear-gradient(90deg, #7b3fe4, #ff2a75);
-    text-align: center;
-    padding: 50px 20px;
-    margin: 40px 0;
-    grid-column: 1 / -1; /* Garante que ocupe a tela toda se herdado */
+.x_men img, .simpsons img, .gravity_falls img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #7b2cbf;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  object-fit: cover;
+}
+
+.simpsons img {
+  background-color: #00d2ff;
+}
+
+.gravity_falls img {
+  background-color: #ff2b6d;
+}
+
+.x_men h3:first-of-type,
+.simpsons h3:first-of-type,
+.gravity_falls h3:first-of-type {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.x_men p span,
+.simpsons p span,
+.gravity_falls p span {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.x_men h3:last-of-type,
+.simpsons h3:last-of-type,
+.gravity_falls h3:last-of-type {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.sem_sentido {
+  background: linear-gradient(90deg, #7b2cbf, #ff2b6d);
+  padding: 80px;
+  color: #ffffff;
+}
+
+.sem_sentido p:first-child span {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.sem_sentido h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.sem_sentido p:last-child {
+  font-size: 16px;
+  opacity: 0.9;
 }
 
 .rodape {
-    background-color: #0b0916;
-    text-align: center;
-    padding: 40px 20px;
-    grid-column: 1 / -1;
+  background-color: #07070d;
+  padding: 40px 80px;
+  text-align: center;
 }
 
-.rodape h2 span {
-    color: #ff2a75;
+.rodape h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.rodape ul {
-    list-style: none;
-    padding: 0;
+.rodape h1 span {
+  color: #ff2b6d;
 }
 
-.rodape ul li {
-    display: inline-block;
-    margin: 0 10px;
+.rodape p:first-of-type {
+  color: #a0a0b0;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.redes_sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.redes_sociais a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.rodape p:last-child {
+  font-size: 12px;
+  color: #606070;
 }

@@ -1,0 +1,463 @@
+:root {
+  --fundo: #090A16;
+  --fundo-2: #101225;
+  --painel: #171A31;
+  --texto: #FFF7E6;
+  --texto-suave: #C7CADB;
+  --magenta: #FF3D81;
+  --ciano: #18D9FF;
+  --amarelo: #FFD84D;
+  --roxo: #6D4AFF;
+  --textos: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--textos);
+}
+
+body {
+  background-color: var(--fundo);
+  color: #ffffff;
+}
+
+a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--fundo);
+}
+
+header h1 span {
+  color: var(--magenta);
+  font-size: 20px;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.links a {
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+
+.links a:hover {
+  color: var(--texto);
+}
+
+.botao_sobre {
+  background-color: var(--fundo);
+  border: 1px var(--magenta) solid;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+
+.botao_sobre:hover {
+  background-color: var(--magenta);
+  transform: translateY(-8px);
+}
+
+/* -------------------------------------------------------------------------------------------
+                                      INICIO
+-------------------------------------------------------------------------------------------- */
+.primeira_parte {
+  background-color: var(--fundo-2);
+  padding: 60px 80px;
+}
+
+.primeira_parte span {
+  color: var(--ciano);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.primeira_parte h1 {
+  font-size: 36px;
+  margin: 15px 0;
+  max-width: 450px;
+}
+
+.primeira_parte p {
+  color: var(--texto-suave);
+  font-size: 14px;
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+
+.apertar_play {
+  background-color: var(--magenta);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+}
+
+.apertar_play a {
+  color: var(--texto);
+  font-weight: bold;
+}
+
+.primeira_parte img {
+  width: 250px;
+  height: 250px;
+  background-color: #171a31;
+  border-radius: 16px;
+  float: right;
+  margin-top: -220px;
+}
+
+/* -------------------------------------------------------------------------------------------
+                                      CLÁSSICOS
+-------------------------------------------------------------------------------------------- */
+.segunda_parte {
+  background-color: var(--fundo);
+  padding: 60px 80px;
+}
+
+.segunda_parte > p span {
+  color: var(--ciano);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.segunda_parte h1 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.segunda_parte > p {
+  color: var(--texto-suave);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.filmes_classicos {
+  display: inline-block;
+  width: 48%;
+  background-color: #12132b;
+  border-radius: 16px;
+  padding: 20px;
+  margin-right: 3%;
+  vertical-align: top;
+}
+
+.segunda_parte article:last-of-type {
+  margin-right: 0;
+}
+
+.filmes_classicos img {
+  width: 100%;
+  height: 180px;
+  background-color: var(--roxo);
+  border-radius: 12px;
+  display: block;
+}
+
+.segunda_parte article:last-of-type img {
+  background-color: var(--magenta);
+}
+
+.filmes_classicos p span {
+  color: var(--amarelo);
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+.filmes_classicos h4 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------
+                                      HEROIS
+-------------------------------------------------------------------------------------------- */
+.terceira_parte {
+  background-color: var(--fundo);
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.terceira_parte  p span {
+  color: var(--ciano);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.terceira_parte h1 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.terceira_parte  p {
+  color: var(--texto-suave);
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.herois_classicos {
+  display: inline-block;
+  width: 30%;
+  background-color: var(--painel);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.herois_classicos img {
+  width: 100%;
+  height: 160px;
+  background-color: var(--magenta);
+  border-radius: 12px;
+  display: block;
+}
+
+.herois_classicos p span {
+  color: var(--amarelo);
+  font-size: 11px;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+.herois_classicos h4 {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+
+/* -------------------------------------------------------------------------------------------
+                                      HOJE
+-------------------------------------------------------------------------------------------- */
+.quarta_parte {
+  background-color: var(--fundo);
+  padding: 60px 80px;
+  clear: both;
+}
+
+.quarta_parte > p span {
+  color: var(--ciano);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.quarta_parte h1 {
+  font-size: 30px;
+  margin: 10px 0 40px 0;
+}
+
+.x_men, .simpsons, .gravity_falls {
+  width: 45%;
+  height: 120px;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.x_men {
+  background-color: var(--amarelo);
+  color: #000;
+  float: left;
+  clear: both;
+}
+
+.simpsons {
+  background-color: var(--amarelo);
+  color: #000;
+  float: right;
+  clear: both;
+}
+
+.gravity_falls {
+  background-color: var(--ciano);
+  color: #000;
+  float: left;
+  clear: both;
+}
+
+.x_men img {
+  background-color: var(--roxo);
+}
+
+.simpsons img {
+  background-color: var(--ciano);
+}
+
+.gravity_falls img {
+  background-color: var(--magenta);
+}
+
+.quarta_parte h3:first-of-type,
+.quarta_parte p span {
+  display: none;
+}
+
+.quarta_parte h3:last-of-type {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+
+/* -------------------------------------------------------------------------------------------
+                                      BANNER SEM SENTIDO
+-------------------------------------------------------------------------------------------- */
+.sem_sentido {
+  clear: both;
+  background: linear-gradient(90deg, var(--roxo), var(--magenta));
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.sem_sentido span {
+  color: var(--amarelo);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sem_sentido h1 {
+  font-size: 60px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.sem_sentido p {
+  color: #fff;
+  font-size: 16px;
+}
+
+
+/* -------------------------------------------------------------------------------------------
+                                      RODAPÉ
+-------------------------------------------------------------------------------------------- */
+.rodape {
+  clear: both;
+  background-color: var(--fundo);
+  padding: 40px 80px;
+}
+
+.rodape h1 {
+  float: left;
+  font-size: 18px;
+}
+
+.rodape h1 span {
+  color: var(--magenta);
+}
+
+.redes_sociais {
+  float: right;
+}
+
+.redes_sociais li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.redes_sociais a {
+  color: var(--ciano);
+  font-size: 13px;
+}
+
+.rodape p {
+  color: var(--texto-suave);
+  font-size: 13px;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------------------------
+                                      RESPONSIVIDADE
+-------------------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  
+  header, 
+  .primeira_parte, 
+  .segunda_parte, 
+  .terceira_parte, 
+  .quarta_parte, 
+  .sem_sentido, 
+  .rodape {
+    padding: 30px 20px;
+  }
+
+  
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .primeira_parte img {
+    float: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .filmes_classicos, 
+  .herois_classicos {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .x_men, 
+  .simpsons, 
+  .gravity_falls {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+
+  .sem_sentido h1 {
+    font-size: 36px;
+  }
+
+  .rodape h1 {
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .redes_sociais {
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .redes_sociais li {
+    margin: 0 10px;
+  }
+  
+  .rodape p {
+    text-align: center;
+  }
+}
