@@ -164,7 +164,28 @@ USE SMARTCOFFEE_PROCEDURES_BRUNO;
 
 -- 11. adicionar_item_pedido(...) buscando o preço atual
 
+    DELIMITER $$
+    CREATE PROCEDURE ADICIONAR_ITEM_PEDIDO2(IN P_ID_PEDIDO INT, IN P_ID_PRODUTO INT, IN P_QTD INT)
+    BEGIN
+        DECLARE V_PRECO DECIMAL(10,2);
+        
+        SELECT PRECO 
+        INTO V_PRECO 
+        FROM PRODUTO 
+        WHERE ID_PRODUTO = P_ID_PRODUTO;
+        
+        INSERT INTO ITEM_PEDIDO (ID_PEDIDO, ID_PRODUTO, QUANTIDADE, PRECO)
+        VALUES (P_ID_PEDIDO, P_ID_PRODUTO, P_QTD, V_PRECO);
+    END $$
+
+    DELIMITER ;
+    
+    CALL ADICIONAR_ITEM_PEDIDO(1, 1, 2);
+
 -- 12. Faça uma chamada inválida e explique o resultado.
+
+    CALL `DEVOLVER_ID`('Mouse', 67, 100)
+        -- Resposta: Deu erro na chave estrangeira (foreign key) porque não existe uma categoria com o id '67'.
 
 -- 13. Use SHOW CREATE PROCEDURE.
 
@@ -196,3 +217,33 @@ USE SMARTCOFFEE_PROCEDURES_BRUNO;
 -- - variável local;
 -- - IF;
 -- - pelo menos uma alteração no banco.
+
+    DELIMITER $$
+    CREATE PROCEDURE ADICIONAR_ITEM (
+        IN P_ID_PEDIDO INT,
+        IN P_ID_PRODUTO INT,
+        IN P_QUANTIDADE INT
+    )
+    BEGIN
+        DECLARE V_PRECO DECIMAL (10, 2);
+        IF P_QUANTIDADE <= 0 THEN
+            SELECT 'QUANTIDADE INVÁLIDA' AS MENSAGEM;
+        ELSE
+            SELECT PRECO
+            INTO V_PRECO
+            FROM PRODUTO
+            WHERE ID_PRODUTO = P_ID_PRODUTO
+                AND ATIVO = TRUE;
+
+            INSERT INTO ITEM_PEDIDO (
+                ID_PEDIDO, ID_PRODUTO, QUANTIDADE, PRECO_UNITARIO
+            )
+            VALUES (
+                P_ID_PEDIDO, P_ID_PRODUTO, P_QUANTIDADE, V_PRECO
+            );
+            SELECT 'ITEM ADICIONADO' AS MENSAGEM;
+        END IF;
+    END $$
+
+    DELIMITER;
+    CALL ADICIONAR_ITEM (1, 5, 42);
