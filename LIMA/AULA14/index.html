@@ -4,12 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- Link para acesso Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css">
+    
     <title>Bootstrap</title>
 </head>
-<body>
+<body class="m-3">
     
     <h1>Introdução ao Bootstrap</h1>
     <a href="#" class="link">Acessar conteúdo</a>
+
+    <h2>Link CDN - Acesso a biblioteca JS</h2>
+    <a href="#cdn" class="btn btn-primary">CSS Biblioteca</a>
+    <br>
+    <h2>Link CDN - Acesso a biblioteca JS</h2>
+    <a href="#cdn" class="btn btn-primary btn-small">CSS Biblioteca</a>
+    <br>
+    <h2>Link CDN - Acesso a biblioteca JS</h2>
+    <a href="#cdn" class="btn btn-primary disabled">CSS Biblioteca</a>
+    <h1>Hello, Bootstrap</h1>
+    <br>
+    <h1>Hello, World!</h1>
+
+    <h1>Framework</h1>
+    <h2>Sem Framework</h2>
+    <p class="text-secondary">Escrevemos manualmente</p>
+
+    <h2>Com Framework</h2>
+    <p>Utilizamos estruturas prontas</p>
+
+    <main>
+        <section class="container py-5">
+            <h1 class="text-primary text-center mb-4">Classes utilitárias</h1> <!-- "mb" = margin bottom-->
+
+            <p class="text-secondary text-center">Tecnologia e utilização de recursos em classes</p>
+        </section>
+
+        <section class="bg-dark text-white text-center p-4"> <!-- "p" = padding -->
+            <h2>Produção</h2>
+
+            <p>Informações do processo produtivo.</p>
+        </section>
+
+        <h3>Espaçamentos:</h3>
+        <p class="fs-2">p-3 - Padding</p> <!-- "fs" = font-size -->
+        <p class="fw-bolder">p-5 - Padding</p> <!-- "fw" = font-weight -->
+        <p class="lh-base">py-5 - Padding Vertical</p> <!-- "lh" = line-weight -->
+        <p class="text-decoration-underline">px-4 - Padding Horizontal</p> <!-- faz o texto ficar com uma linha embaixo dele (sublinhado) -->
+        <p class="fs-4">m-3 - Margin</p> <!-- "fs" = font-size -->
+        <p class="text-uppercase">mt-4 - Margin Top</p> <!-- deixa o texto em caixa alta -->
+        <p class="text-capitalize">mb-5 - Margin Bottom</p>
+        <p class="badge text-bg-primary text-wrap" style="width: 4rem;">mx-auto - Margin Definida</p>
+        
+        <h2 class="text-primary">Container e Layout</h2>
+        <p class="text-secondary">Container - Largura responsiva controlada.</p>
+        <p class="text-secondary">Container-Fluid - Utiliza toda a Largura.</p>
+
+        <header class="container">
+            <section class="row text-center">
+                <article class="col-4 bg-dark bg-gradient p-3">
+                    Espaço 1
+                </article>
+
+                <article class="col-4 bg-secondary bg-gradient p-3">
+                    Espaço 2
+                </article>
+
+                <article class="col-4 bg-light bg-gradient p-3">
+                    Espaço 3
+                </article>
+            </section>
+        </header>
+
+        <h2 class="text-danger">Exercício 1</h2>
+        <p class="text-primary">Criar um container de duas colunas</p>
+
+        <header class="container">
+            <section class="row text-center bg-info">
+                <article class="col-6 p-5">
+                    Pedro
+                </article>
+
+                <article class="col-6 bg-danger-subtle p-5">
+                    Bruno
+                </article>
+            </section>
+        </header>
+
+        <section class="card m-3" style="width: 18rem;">
+            Cartão Virtual
+            <figure>
+                <img src="https://imagens.imirante.com.br/imagens/noticias/2026/11/18/9F1EN1Ht3sIFKzjS6P3dgmj7ipmKxlhfHz71TBNG.jpg?s=db6b2caa75319ed94c11335cdc11678c" class="card-img-top" alt="Cartão Virtual 1">
+                <article class="card-body">
+                    <h5 class="card-title">Grand Theft Auto VI</h5>
+                    <p class="card-text">Rockstar Games</p>
+                    <a href="#" class="btn bg-danger bg-gradient text-white">Comprar</a>
+                </article>
+            </figure>
+        </section>
+
+        <h2>Responsividade</h2>
+        <article class="col-12 col-md-6 col-md-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse tenetur facilis iure ullam tempora saepe fugit ipsum labore aliquam eaque sed corrupti nisi, odio, atque repellendus voluptatibus illum fugiat!
+
+            <p class="text-primary">Celular</p>
+            <p class="text-secondary">Tablet</p>
+            <p class="text-danger">Desktop</p>
+        </article>
+
+        <section class="row g-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores dicta vero veniam nisi voluptatum at? Maxime magnam asperiores id illo necessitatibus qui doloremque hic quidem. Labore incidunt laudantium doloribus mollitia.
+        </section>
+
+    </main>
 
 </body>
 </html>
