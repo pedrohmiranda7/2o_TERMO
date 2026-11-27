@@ -1,0 +1,281 @@
+:root {
+    --fundo: #1E1B4B;
+    --secundaria: #5B21B6;
+    --destaque: #9333EA;
+    --fundo_geral: whitesmoke;
+
+    --texto: #FFFFFF;
+    --texto_secundario: #000000;
+
+    --titulo: "Poppins", sans-serif;
+    --informacao: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo_geral);
+    font-family: var(--informacao);
+    color: var(--texto_secundario);
+}
+
+/* ================= CABEÇALHO ================= */
+.cabecalho {
+    background: linear-gradient(90deg, var(--fundo), var(--secundaria), var(--destaque));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    color: var(--texto);
+}
+
+.cabecalho h2 {
+    font-family: var(--titulo);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cabecalho h2 span {
+    color: #D8B4FE;
+}
+
+.barra_navegacao {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cabecalho a {
+    color: var(--texto);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cabecalho a:hover {
+    color: #D8B4FE;
+}
+
+/* ================= CONTEÚDO PRINCIPAL ================= */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ================= PRIMEIRA PARTE ================= */
+.primeira_parte {
+    background-color: var(--secundaria);
+    color: var(--texto);
+    padding: 40px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.primeira_parte h1 {
+    width: 100%;
+    font-family: var(--titulo);
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.primeira_parte p {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.primeira_parte img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.primeira_parte button {
+    background-color: var(--fundo);
+    border: 2px solid var(--destaque);
+    border-radius: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primeira_parte button:hover {
+    background-color: var(--destaque);
+}
+
+.primeira_parte button a {
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* ================= ATRAÇÕES ================= */
+.atracoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.container {
+    background-color: var(--texto);
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.container img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: #E5E7EB;
+}
+
+.container h4 {
+    font-family: var(--titulo);
+    color: var(--secundaria);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    box-shadow: 0 20px 16px rgb(168, 85, 247);
+}
+
+/* ================= PROGRAMAÇÃO E SOBRE ================= */
+main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.programacao, .sobre {
+    background-color: var(--texto);
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.programacao h2, .sobre h2 {
+    font-family: var(--titulo);
+    color: var(--secundaria);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.horarios {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.horarios li {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 15px;
+}
+
+.horarios time {
+    font-weight: bold;
+    color: var(--destaque);
+    margin-right: 8px;
+}
+
+.sobre p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.programacao:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    box-shadow: 0 20px 16px rgb(168, 85, 247);
+}
+
+.sobre:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    box-shadow: 0 20px 16px rgb(168, 85, 247);
+}
+
+/* ================= RODAPÉ ================= */
+.ultima_parte {
+    background: linear-gradient(90deg, var(--fundo), var(--secundaria), var(--destaque));
+    color: var(--texto);
+    padding: 20px 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.rodape {
+    list-style: none;
+}
+
+.rodape li {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ultima_parte p {
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .atracoes {
+        grid-template-columns: 1fr;
+    }
+
+    main section {
+        grid-template-columns: 1fr;
+    }
+}
